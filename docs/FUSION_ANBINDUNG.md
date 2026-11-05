@@ -2,6 +2,10 @@
 
 Recherche und vertiefter lokaler Check: 05.11.2026. Die eigentliche Fusion-Installation fehlt am Ziel des vorhandenen Starters. In `~/Applications/Autodesk Fusion.app` liegt nur eine ca. 165-kB-Start-App; deren Shellskript verweist auf `~/Library/Application Support/Autodesk/webdeploy/production/8d5cf31c499af92b129d5c36903f580173897f8c/Autodesk Fusion.app` (alternativ `Autodesk Fusion 360.app`). Der übergeordnete Autodesk-Installationsordner existiert nicht. Die vorherige Aussage „Fusion installiert“ beruhte nur auf dem vorhandenen Starter und wurde korrigiert. `Fusion Client Downloader.dmg` liegt weiterhin in Downloads. Vor der Verbindung muss die eigentliche Installation wiederhergestellt werden. `127.0.0.1:27182` war nicht erreichbar; in dieser Sitzung sind keine Fusion-Modellierungswerkzeuge aktiv. Es wurde nichts im CAD geändert.
 
+## Aktueller Installationsversuch auf NO NAME
+
+Am 05.11.2026 wurde auf NO NAME ein APFS-Sparsebundle mit Volumename FusionExtern angelegt und der webdeploy-Ordner dorthin umgeleitet; das Original bleibt als Sicherung erhalten. **Fusion ist weiterhin nicht installiert:** Der signierte Installer prüft trotz Umleitung die interne Platte. Laut Protokoll fehlen noch ungefähr 2 GB interner Platz. Der zuvor fehlende Autodesk-Ordner existiert inzwischen wieder als vorbereitete Struktur. Details, Pfade und Wiederaufnahme: [Installationsprotokoll](FUSION_INSTALLATION_2026-11-05.md).
+
 ## Direkter Weg: offizieller lokaler Fusion-MCP-Server
 
 In Fusion unter Preferences/Einstellungen → General/Allgemein → API den lokalen Fusion MCP Server einschalten und Fusion offen lassen. Standard-Endpunkt: `http://127.0.0.1:27182/mcp`. In Claude Desktop den offiziellen Autodesk-Fusion-Connector auswählen; andere lokale Clients brauchen Streamable HTTP. Ein anderer Port erfordert die entsprechende Client-URL. [F1]

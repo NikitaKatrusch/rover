@@ -20,7 +20,7 @@ Nikita möchte vorhandene Hardware wiederverwenden, unnötige zusätzliche Rechn
 | Fahrtests | Ein Motor lief; der andere wurde laut Nutzer direkt an der Niederspannungsversorgung zum Drehen gebracht | Ursache des Fehlers und erfolgreicher abschließender Test beider Kanäle |
 | Druckteile | Lochplatte, Adapter, Caster-/Bandideen im Chat bearbeitet; Adapterdruck mit zu großer Passung berichtet | Aktuelle editierbare CAD-Baugruppe, endgültige Passprotokolle und Belastungstests |
 | Vision | Handy-Kamera plus Laptop als gewünschter Weg | Verifizierte Kamera-/Erkennungssoftware im Repository |
-| Fusion | Nur Start-App und Downloader gefunden; Start-App verweist auf fehlenden Installationsordner. Offizielle MCP-Anbindung dokumentiert | Eigentliche Fusion-Installation fehlt am verknüpften Ziel; keine aktive Verbindung |
+| Fusion | APFS-Sparsebundle auf NO NAME und webdeploy-Umleitung eingerichtet; Sicherung des alten Ordners vorhanden | Installation weiterhin blockiert: Vorprüfung verlangt etwa 2 GB zusätzlichen internen Platz; keine installierte App oder MCP-Verbindung |
 
 Die beiden alten Sketches heißen `Ballsammler_Rover.ino` und `RoverV2.ino`. RoverV2 ist laut lokalem Änderungsdatum der spätere Fund; Dateidatum allein beweist nicht, welcher Sketch auf dem ESP32 installiert ist. [S6]
 
