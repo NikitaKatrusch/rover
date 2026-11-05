@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "compiled_on": "2026-11-05",
+  "purpose": "Reported project dimensions for review; not a released Fusion build configuration",
+  "length_unit": "mm",
+  "physical_measurement_session_performed": false,
+  "sources": "docs/QUELLEN_UND_ABGLEICH.md",
+  "dimensions": [
+    {
+      "parameter": "motor_775_body_diameter",
+      "reported_mm": 44.6,
+      "evidence_kind": "historical_assistant_recall",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Gehäuse, nicht Zentrierbund"
+    },
+    {
+      "parameter": "motor_775_body_length",
+      "reported_mm": 71,
+      "evidence_kind": "historical_assistant_recall",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Ohne Welle; Anschlüsse gesondert"
+    },
+    {
+      "parameter": "motor_775_shaft_diameter",
+      "reported_mm": 5,
+      "evidence_kind": "reported_product_spec",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Kein neues Messprotokoll"
+    },
+    {
+      "parameter": "motor_775_shaft_length",
+      "reported_mm": null,
+      "evidence_kind": "conflicting_historical_spec",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "13 mm und 0.55 in widersprechen sich; 0.55 in = 13.97 mm"
+    },
+    {
+      "parameter": "wheel_diameter",
+      "reported_mm": 72,
+      "evidence_kind": "user_reported_variant",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "64/70 sind alternative Angebotsvarianten"
+    },
+    {
+      "parameter": "wheel_width",
+      "reported_mm": 24,
+      "evidence_kind": "supplier_text_pasted_by_user",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Ungefährer Angebotswert"
+    },
+    {
+      "parameter": "wheel_bearing_seat_diameter",
+      "reported_mm": 22,
+      "evidence_kind": "supplier_text_pasted_by_user",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Sitztiefe und Schulter fehlen"
+    },
+    {
+      "parameter": "wheel_bearing_inner_diameter",
+      "reported_mm": 8,
+      "evidence_kind": "supplier_text_pasted_by_user",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Einbauzustand offen"
+    },
+    {
+      "parameter": "base_plate_width",
+      "reported_mm": 215,
+      "evidence_kind": "historical_cad_readback",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Späterer Screenshotstand, aktuelle CAD-Datei fehlt"
+    },
+    {
+      "parameter": "base_plate_length",
+      "reported_mm": 235,
+      "evidence_kind": "historical_cad_readback",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Ältere Entwürfe waren 305/307 lang"
+    },
+    {
+      "parameter": "base_plate_thickness",
+      "reported_mm": 5,
+      "evidence_kind": "user_reported_cad_dimension",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Druck-Istmaß fehlt"
+    },
+    {
+      "parameter": "base_hole_diameter",
+      "reported_mm": 5,
+      "evidence_kind": "user_reported_cad_dimension",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Passprobe nicht dokumentiert"
+    },
+    {
+      "parameter": "base_hole_pitch",
+      "reported_mm": 10,
+      "evidence_kind": "user_reported_cad_dimension",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Randbezug nicht eindeutig"
+    },
+    {
+      "parameter": "adapter_outer_diameter",
+      "reported_mm": 22,
+      "evidence_kind": "historical_cad_proposal",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Keine freigegebene Presspassung"
+    },
+    {
+      "parameter": "adapter_axial_length",
+      "reported_mm": 11,
+      "evidence_kind": "historical_cad_proposal",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Nutzbare Wellenlänge vorher messen"
+    },
+    {
+      "parameter": "adapter_shaft_bore",
+      "reported_mm": null,
+      "evidence_kind": "reported_fit_problem",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Alte 5.6-mm-Bohrung; später 6 mm rechnerisch; Nutzer meldet zu groß"
+    },
+    {
+      "parameter": "ball_diameter",
+      "reported_mm": 66,
+      "evidence_kind": "historical_assistant_discussion",
+      "source": "S5",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Keine konkrete Ballmessung im verfügbaren Beleg"
+    },
+    {
+      "parameter": "belt_gap",
+      "reported_mm": 63,
+      "evidence_kind": "historical_assistant_discussion",
+      "source": "S5",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Nicht erprobte Kompression bei Ball 66"
+    },
+    {
+      "parameter": "hopper_width",
+      "reported_mm": 210,
+      "evidence_kind": "historical_design_proposal",
+      "source": "S2",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Hüllmaß, keine Netto-Innenbreite"
+    },
+    {
+      "parameter": "hopper_depth",
+      "reported_mm": 150,
+      "evidence_kind": "historical_design_proposal",
+      "source": "S2",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Hüllmaß"
+    },
+    {
+      "parameter": "hopper_height",
+      "reported_mm": 180,
+      "evidence_kind": "historical_design_proposal",
+      "source": "S2",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Keine bestätigte 20-Ball-Kapazität"
+    },
+    {
+      "parameter": "jgb37_body_diameter",
+      "reported_mm": null,
+      "evidence_kind": "unknown",
+      "source": "S3",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Typfamilie ist kein verifiziertes Einbaumaß"
+    },
+    {
+      "parameter": "jgb37_shaft_diameter",
+      "reported_mm": null,
+      "evidence_kind": "unknown",
+      "source": "S3",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Konkrete Variante fehlt"
+    },
+    {
+      "parameter": "motor_mount_hole_spacing",
+      "reported_mm": null,
+      "evidence_kind": "unknown",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Kein belastbares Bohrbild"
+    },
+    {
+      "parameter": "battery_length",
+      "reported_mm": null,
+      "evidence_kind": "unknown",
+      "source": "S4",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Ninebot-Gehäuse messen"
+    },
+    {
+      "parameter": "battery_width",
+      "reported_mm": null,
+      "evidence_kind": "unknown",
+      "source": "S4",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Ninebot-Gehäuse messen"
+    },
+    {
+      "parameter": "battery_height",
+      "reported_mm": null,
+      "evidence_kind": "unknown",
+      "source": "S4",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Ninebot-Gehäuse messen"
+    },
+    {
+      "parameter": "servo_mount_hole_spacing",
+      "reported_mm": null,
+      "evidence_kind": "unknown",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "180/360-Versionen getrennt halten"
+    },
+    {
+      "parameter": "caster_installed_height",
+      "reported_mm": null,
+      "evidence_kind": "unknown",
+      "source": "S1/S2",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Aus tatsächlicher Baugruppe bestimmen"
+    }
+  ],
+  "battery_reported_electrical": {
+    "source": "S4",
+    "nominal_v": 36,
+    "fully_charged_v": 42,
+    "energy_wh": 551,
+    "capacity_ah": 15.3,
+    "present_reported": true,
+    "connection_design_released": false
+  },
+  "unknowns_policy": "null means unknown or unresolved; never substitute zero or silently assume a standard part variant"
+}

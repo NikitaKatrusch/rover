@@ -1,5 +1,7 @@
 # Ballsammler-Rover
 
+> **Gemeinsamer Abgleich vom 05.11.2026:** Für neue Arbeiten zuerst [Projektstand](docs/PROJEKTSTAND_CODEX_2026-11-05.md), [Inventar](hardware/INVENTAR.md), [Maße](hardware/MASSE.md) und [Quellen/Widersprüche](docs/QUELLEN_UND_ABGLEICH.md) lesen. Ergänzt sind der spätere Ninebot-Akku und zwei wiedergefundene echte [ESP32-Sketches](firmware/legacy/README.md). Die [Fusion-Anbindung](docs/FUSION_ANBINDUNG.md) ist dokumentiert. Vorhandene Teile, Warenkorb und ungetestete Vorschläge sind getrennt; der vorhandene 360°-Servo ist kein Positionsservo. Gemeinsame Arbeitsregeln: [AGENTS.md](AGENTS.md).
+
 Kleiner Wagen, der Bälle vom Boden einsammelt und wieder hinausschießt.
 Nachfolgeprojekt der Padel-Ballmaschine (siehe Abschnitt "Vorhandene Teile").
 
