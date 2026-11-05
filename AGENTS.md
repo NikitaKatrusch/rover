@@ -1,6 +1,7 @@
-# Gemeinsamer Arbeitsstand für Codex und Claude
+# Projektarbeit mit Codex
 
-Dieses Repository ist die gemeinsame Projektablage für Nikitas Ballsammler-Rover.
+Dieses Repository ist die zentrale Projektablage für Nikitas Ballsammler-Rover.
+Nikita hat am 05.11.2026 festgelegt: Ab jetzt übernimmt Codex die weitere Projektarbeit allein. Bestehende Beiträge und Quellen bleiben als Projektwissen erhalten. Eine Abstimmung mit Claude ist kein Arbeitsschritt mehr.
 Stand dieser Ergänzung: 2026-11-05. Vor jeder Arbeit den aktuellen Remote-Stand lesen.
 
 ## Zuerst lesen
@@ -20,12 +21,12 @@ Stand dieser Ergänzung: 2026-11-05. Vor jeder Arbeit den aktuellen Remote-Stand
 - Firmware unter `firmware/legacy/` ist archivierter Altstand, keine freigegebene Steuerung des endgültigen Rovers.
 - Änderungen an Mechanik, Elektronik und Software mit Quelle, Datum, betroffener Schnittstelle und Prüfergebnis dokumentieren.
 
-## Gleichzeitige Arbeit
+## Versionspflege
 
 - Vor dem Schreiben und unmittelbar vor dem Push den aktuellen Branch-Head prüfen.
 - Änderungen anderer Autoren erhalten; niemals einen alten Gesamtstand über `main` schreiben und keinen Force-Push verwenden.
 - Bei verändertem Head neu einlesen und Änderungen auf den neuen Stand übernehmen. Dateikonflikte inhaltlich zusammenführen.
-- Zusammenfassungen beider Autoren gemeinsam lesen. Ein Commit synchronisiert Dateien, nicht automatisch den Kontext eines bereits geöffneten Chats.
+- Den aktuellen dokumentierten Projektstand fortführen. Frühere Zusammenfassungen als Quellen berücksichtigen; für den nächsten Schritt keinen Beitrag oder Abgleich mit einem zweiten Assistenten voraussetzen.
 - Keine Tokens, privaten Zugangsdaten oder sachfremden persönlichen Informationen übernehmen.
 
 ## Projektpräferenzen

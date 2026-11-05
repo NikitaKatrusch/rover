@@ -1,4 +1,4 @@
-# Quellen und Abgleich zwischen Codex und Claude
+# Quellen und historischer Projektabgleich
 
 Zusammenführung vom 05.11.2026. Nur projektbezogene Informationen; keine sachfremden persönlichen Daten.
 
@@ -12,8 +12,9 @@ Zusammenführung vom 05.11.2026. Nur projektbezogene Informationen; keine sachfr
 | S4 | Wiedergefundene Nutzeraussagen, 21.09.2026, ca. 08:57/09:01 Uhr Europe/Berlin | Ninebot Max G30D2 kostenlos vorhanden; 36 V nominal, 42 V voll, 551 Wh / 15,3 Ah. Keine gesicherten Stecker-/Gehäusemaße. |
 | S5 | Wiedergefundene Unterhaltung, 23.09.2026, ca. 20:16/20:17 Uhr Europe/Berlin | Wunsch nach detailliertem Systemplan; 66-mm-Ball/63-mm-Spalt als alte Assistentenfrage. Keine Messung oder erfolgreiche Passprobe daraus ableiten. |
 | S6 | Zwei tatsächliche lokale Dateien aus `Downloads/Ballsammler_Rover/` und `Downloads/RoverV2/` | Archivierte Quelltexte; SHA-256 und Dateizeit im Firmware-Archiv. Kein Beweis für den derzeit geflashten oder funktionierenden Stand. |
-| S7 | Aktuelle Nutzerauthorisierung vom 05.11.2026 | Beide Assistenten sollen Wissen im Repo zusammenführen; Claude schreibt gleichzeitig. Fusion für maßhaltige Konstruktion gewünscht. |
-| S8 | Claudes README, Commit 7faeb8405e78606ca203fc4d4415599080a89c14 | Während dieser Arbeit eingetroffen und gelesen. Bestehenden Text bei Ergänzung erhalten. |
+| S7 | Frühere Nutzerautorisierung vom 05.11.2026 | Beide Assistenten sollten zunächst Wissen im Repo zusammenführen. Fusion für maßhaltige Konstruktion gewünscht. Die Zuständigkeit wurde anschließend durch S9 aktualisiert. |
+| S8 | Claudes README, Commit 7faeb8405e78606ca203fc4d4415599080a89c14 | Während der Zusammenführung eingetroffen und gelesen; als historische Projektquelle erhalten. |
+| S9 | Neueste Nutzeranweisung vom 05.11.2026: „Claude vergessen wir nur noch du arbeitest da dran“ | Weitere Projektarbeit allein durch Codex. Keine weitere Abstimmung oder Mitarbeit von Claude voraussetzen; vorhandenes Projektwissen bleibt nutzbar. |
 
 S3–S5 sind aus wiedergefundenem Gesprächskontext zusammengefasst. Sie werden nicht als neu vom Nutzer bestätigte Inventur oder wortgetreuer vollständiger Chat ausgegeben. Exakte Chattitel und Direktlinks wurden nicht geliefert. Kein erfundener Chatlink.
 
@@ -35,7 +36,7 @@ Chronologiehinweis: Der früheste wiedergefundene Ballmaschinen-Satz liegt bei 0
 | Automatik | Zeitkurve = exakter Winkel / lückenlose Platzabdeckung | Ohne Rückführung und Praxistest nur zeitgesteuerter Versuch. |
 | Akku | Frühere 12-V-Empfehlungen gelten unverändert für Ninebot | Neu dimensionieren für maximal 42 V plus geeignete Reserve. |
 | Parallelbetrieb | Zwei getrennte Modi erfüllen automatisch den Wunsch Sammeln+Schießen | Zustandsmodell später bewusst definieren. |
-| Synchronisierung | Beide Chats wissen nach einem Push automatisch alles | Vor jeder Arbeit aktuellen Commit und gemeinsame Dokumente lesen. |
+| Fortführung | Ein alter Chat enthält automatisch den aktuellen Repository-Stand | Codex liest vor der weiteren Arbeit den aktuellen Commit und die Projektdateien; Zuständigkeit gemäß S9. |
 
 ## Technische Primärquellen, am 05.11.2026 geprüft
 

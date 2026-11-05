@@ -2,7 +2,7 @@
 
 Stand: 05.11.2026 · Autor dieser Zusammenführung: Codex · Repository: NikitaKatrusch/rover.
 
-Diese Datei ergänzt Claudes README und die ursprünglichen Chatdateien. Sie ersetzt sie nicht. Quellenkennungen stehen in [QUELLEN_UND_ABGLEICH.md](QUELLEN_UND_ABGLEICH.md). Nicht dokumentiert bedeutet nicht automatisch nicht vorhanden.
+Ab 05.11.2026 übernimmt Codex auf Nikitas Wunsch die weitere Projektarbeit allein. Diese Datei ergänzt die bestehende README und die ursprünglichen Chatdateien. Sie ersetzt sie nicht. Quellenkennungen stehen in [QUELLEN_UND_ABGLEICH.md](QUELLEN_UND_ABGLEICH.md). Nicht dokumentiert bedeutet nicht automatisch nicht vorhanden.
 
 ## 1. Ziel und Prioritäten
 
@@ -95,7 +95,7 @@ Die Fusion-Anbindung und der geplante parametrische Arbeitsweg stehen in [FUSION
 
 ## 7. Nächste überprüfbare Schritte
 
-1. Claudes neueste Ergänzungen mit diesem Stand abgleichen; Warenkorbstatus und reale Teilevariante ergänzen.
+1. Den aktuellen Repository-Stand fortführen; Warenkorbstatus und reale Teilevariante ergänzen. Die weitere Umsetzung übernimmt Codex allein.
 2. Aktuelle CAD-Datei und die kritischen Istmaße aufnehmen; insbesondere Motorbohrbild, Wellenlänge, Radnabe, Getriebemotor und Akkublock.
 3. Motor-/Treiberproblem mit dokumentierter Versorgung und reproduzierbarem Links-/Rechts-Test lösen; Erfolg nicht aus dem Dateinamen „V2“ ableiten.
 4. Fusion verbinden, vorhandene Geometrie lesen, Einheiten und Komponenten prüfen; Modelländerungen versionieren.
