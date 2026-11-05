@@ -1,6 +1,6 @@
 # Autodesk Fusion anbinden und maßhaltig konstruieren
 
-Recherche und lokaler Check: 05.11.2026. Fusion ist auf Nikitas Mac installiert. Bei der Prüfung war `127.0.0.1:27182` nicht erreichbar. Das kann an geschlossenem Fusion oder einem deaktivierten/anders konfigurierten Server liegen; der Grund wurde nicht festgestellt. In dieser Sitzung sind noch keine Fusion-Modellierungswerkzeuge aktiv. Es wurde nichts im CAD geändert.
+Recherche und vertiefter lokaler Check: 05.11.2026. Die eigentliche Fusion-Installation fehlt am Ziel des vorhandenen Starters. In `~/Applications/Autodesk Fusion.app` liegt nur eine ca. 165-kB-Start-App; deren Shellskript verweist auf `~/Library/Application Support/Autodesk/webdeploy/production/8d5cf31c499af92b129d5c36903f580173897f8c/Autodesk Fusion.app` (alternativ `Autodesk Fusion 360.app`). Der übergeordnete Autodesk-Installationsordner existiert nicht. Die vorherige Aussage „Fusion installiert“ beruhte nur auf dem vorhandenen Starter und wurde korrigiert. `Fusion Client Downloader.dmg` liegt weiterhin in Downloads. Vor der Verbindung muss die eigentliche Installation wiederhergestellt werden. `127.0.0.1:27182` war nicht erreichbar; in dieser Sitzung sind keine Fusion-Modellierungswerkzeuge aktiv. Es wurde nichts im CAD geändert.
 
 ## Direkter Weg: offizieller lokaler Fusion-MCP-Server
 
