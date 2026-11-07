@@ -1,28 +1,28 @@
 # Hardwarebestand und Beschaffungsstand
 
-Stand der Zusammenführung: 05.11.2026. Mengen sind dokumentierte historische Mengen, kein aktueller physischer Zählbestand. Quellen: [Quellenregister](../docs/QUELLEN_UND_ABGLEICH.md).
+Stand 07.11.2026. S12 ergänzt die historischen Angaben um vom Nutzer übermittelte abgeschlossene Bestellungen vom 26.05.2026 und 08.11.2025. Die Mengen in der Tabelle sind Bestellmengen oder historische Bestandsangaben. Ein aktueller physischer Zählbestand steht aus. [Quellenregister](../docs/QUELLEN_UND_ABGLEICH.md)
 
-## Vorhanden dokumentiert
+## Kauf und Bestand dokumentiert
 
 | Teil | Menge | Nachweis / Einordnung | Verwendung / offen |
 |---|---:|---|---|
-| 775-DC-Motor, 12 V, Angebotsangabe 15.000 U/min | 2 | S1: Ursprungsliste und Nutzermotortests | Historischer Fahrantrieb; endgültige Eignung/Übersetzung offen |
-| PU-Skater-Rad, gewählte Variante 72 mm | 2 | S1: Nutzer nennt 72 mm, alter Bestand 2 Stück | Fahrantrieb; Angebot listet auch 64/70 mm, das sind keine bestätigten zusätzlichen Räder |
-| L298N-Modul | 2 | S1/S2: einer für Fahrt, einer frei dokumentiert | Frei bedeutet historisch frei, keine automatische Stromfreigabe für Bandmotoren |
-| ESP32-Board | mindestens 1 | S1: Nutzer besitzt und testet es | WROOM-32D wurde im Verlauf identifiziert; genaue Devboardabmessungen fehlen |
-| Arduino Mega 2560, CH340/Type-C | mindestens 1 | S1: Bestand; zweiter Mega als mögliche Reserve besprochen | Reserve; zweite Stückzahl nicht gesichert |
-| HC-05 | 1 laut alter Liste | S1 | Bluetooth-Konzept der ursprünglichen Ballmaschine, kein Muss für WLAN-Rover |
+| 775-DC-Motor, 12 V, Variante 15.000 U/min und „no Teeth“ (ohne Ritzel) | 2 bestellt | S12: 26.05.2026; frühere Nutzermotortests S1 | In V1 als Schussmotoren vorgesehen. Drehzahl unter Last, Anlaufstrom, Welle und Befestigung offen |
+| Skater-Rad Ø72 mm, Angebot mit Lagern | 2 bestellt | S12: 26.05.2026; frühere Maßangaben S1 | Fahrwerk. Einbauzustand und Radbreite prüfen |
+| L298N-Dual-H-Brücken-Modul | 2 bestellt | S12: 26.05.2026; frühere Zuordnung S1/S2 | Modulvariante, Pinbelegung und Eignung für den jeweiligen Motor offen |
+| ESP32 DevKitC mit WROOM-32D | 2 bestellt | S12: 08.11.2025, einmal Variante „ESP32-32D“ und einmal „32D-Type-C-1PCS“; S1 belegt den Testkontext | WLAN-Steuerung. Genaue Kontur und Stiftleisten der eingesetzten Platine abgleichen |
+| Arduino Mega 2560, CH340, USB-C | 1 bestellt | S12: 26.05.2026, Variante „MEGA2560 CH340 TYPEC“ | Alternative für den Motor-Logikversuch; ESP32 für WLAN vorgesehen |
+| HC-05 New Version | 1 bestellt | S12: 26.05.2026 | Bluetooth-Reserve aus dem Konzept der Ballmaschine |
 | 28BYJ-48, 5 V + ULN2003 | 1 Set laut alter Liste | S1 | Reserve / möglicher Vereinzler; nicht festgelegt |
 | MG996/MG996R, 360° Continuous Rotation | mindestens 1 | S1: Variantenkorrektur, Nutzer sagt unbenutzt | Kein Positionsservo für feste Klappen-/Kippwinkel |
-| Netzteil 12 V / 10 A | 1 laut alter Liste | S1: Teileliste und Motorversuche | Tischtest, kein mobiler Akku |
-| 608ZZ-Lager | Menge unbekannt | S1 | Zum Teil in den Skater-Rädern; Anzahl und Einbauzustand unbekannt |
-| Schrauben-/Muttern-/Scheibenset M2–M5 | 1 Sortiment | S1: Nutzer kopiert Angebotsliste | M3×8/12/16 erwähnt; aktueller Restbestand unbekannt |
+| Netzteil 12 V / 10 A, EU | 1 bestellt | S12: 26.05.2026, Variante „12V 10A EU“; frühere Motorversuche S1 | Tischtest. Belastbarkeit des konkreten Aufbaus und Anschluss prüfen |
+| 608ZZ-Lager, ABEC-5 laut Angebot, 8 × 22 × 7 mm (innen × außen × Breite) | 10 separat bestellt | S12: 26.05.2026, ein 10er-Pack | Zusätzlich zur Radbestellung belegt. Anzahl tatsächlich in Rädern verbauter Lager offen |
+| Schrauben-/Mutternsortiment M2/M2,5/M3/M4/M5, Edelstahl 304 laut Angebot | 1 Sortiment bestellt | S12: 26.05.2026, Variante „320PCS“; Aufteilung laut S1 | M3×8/12/16 erwähnt; aktueller Restbestand offen |
 | PVC-90°-Rohrbogen | mindestens 1 | S1: gekauft erwähnt | Alter Ballkanal; Nennweite 75 mm nur als historischer Suchhinweis, Ist-Innen-/Außenmaß fehlen |
 | Ninebot Max G30D2-Akku | 1 | S4: Nutzer bestätigt kostenlos vorhanden | 36 V nominal, 42 V voll, 551 Wh / 15,3 Ah; Maße/Anschlüsse fehlen |
 | Lötkolben, Leitungen und einfaches Abisolierwerkzeug | vorhanden im Testkontext | S1 | Genaue Werkzeuge, Querschnitte und belastbare Verbindungen noch erfassen |
 | Bambu P1S | 1 vom Nutzer genannt | S1 | Fertigungsmittel; aktuelles Profil/Düse/Material nicht vollständig dokumentiert |
 
-WS2812B, Widerstände und Kondensatoren aus einem anderen ESP32-Projekt werden im Altchat erwähnt. Sie werden hier nicht ohne separate Bestätigung als für den Rover verfügbar verplant.
+Die Bestellliste nennt zusätzlich ein 5-V-/3-A-USB-Netzteil, 20 Elektrolytkondensatoren mit 1.000 µF und 10 V sowie einen WS2812B-Streifen mit 5 V, 5 m und 60 LEDs/m. Diese Käufe sind belegt. Ihre Verfügbarkeit für den Rover und eine Einbauzuordnung stehen offen. Ein weiterer abgeschlossener Eintrag vom 26.05.2026 enthält keinen Produktnamen und lässt sich keinem Bauteil zuordnen.
 
 ## September-Warenkorb, Kaufabschluss nicht belegt
 
@@ -38,7 +38,7 @@ WS2812B, Widerstände und Kondensatoren aus einem anderen ESP32-Projekt werden i
 | MG996R-180° | 2 laut späterer Zusammenfassung | Verwechslung mit vorhandenem 360°-Servo |
 | LM2596 | Genannt | Zahl, Modulvariante, Hochvolttauglichkeit oder bestätigter Besitz |
 
-S3 stammt aus der wiedergefundenen Unterhaltung vom 08.09.2026. Falls Claude Belege für einen späteren Kauf hat, Datum und Quelle ergänzen, danach Status aktualisieren.
+S3 stammt aus der wiedergefundenen Unterhaltung vom 08.09.2026. Die abgeschlossenen Bestellungen aus S12 belegen die Mai- und November-Einträge oben. Die zusätzlichen Artikel aus dem September-Warenkorb bleiben offen.
 
 ## Nur empfohlen / konstruktiv geplant
 
@@ -52,7 +52,7 @@ S3 stammt aus der wiedergefundenen Unterhaltung vom 08.09.2026. Falls Claude Bel
 
 ## Schraubensortiment: überlieferte Angebotsliste
 
-Kein Zählprotokoll. Kopierter Titel „320PCS“, tatsächlichen Lieferinhalt bei Bedarf prüfen.
+Die Variante „320PCS“ ist durch S12 belegt. Die Aufteilung unten stammt aus dem älteren Angebot S1. Der tatsächliche Restbestand steht aus.
 
 | Größe | Muttern | Schrauben | Weitere genannte Teile |
 |---|---:|---|---|

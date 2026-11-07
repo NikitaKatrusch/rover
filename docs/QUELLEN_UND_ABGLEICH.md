@@ -17,10 +17,11 @@ Zusammenführung vom 05.11.2026. Nur projektbezogene Informationen; keine sachfr
 | S9 | Neueste Nutzeranweisung vom 05.11.2026: „Claude vergessen wir nur noch du arbeitest da dran“ | Weitere Projektarbeit allein durch Codex. Keine weitere Abstimmung oder Mitarbeit von Claude voraussetzen; vorhandenes Projektwissen bleibt nutzbar. |
 | S10 | Nikitas Konzept und Tinkercad-Screenshot „Neat Kasi“ vom 07.11.2026 | Ball unter dem Rover, hinten Schnecke, Speicher und Vereinzelung, Schussräder neigen, Rover dreht, Android-Kamera und Netzteil zuerst. Screenshot zeigt Konzeptgeometrie, keine verifizierten Istmaße. |
 | S11 | Fusion-Lauf und [Prüfbericht](../cad/referenz/pruefbericht.json) vom 07.11.2026 | B-Rep-Abmessungen und Einbaupositionen der Referenzkörper. Nachweis für die erzeugte CAD-Geometrie. |
+| S12 | Vom Nutzer am 07.11.2026 übermittelte abgeschlossene AliExpress-Bestellungen vom 26.05.2026 und 08.11.2025 | Belegt bestellte Varianten und Mengen, darunter 775 ohne Ritzel, 72-mm-Räder, separates 608ZZ-10er-Pack, L298N, Netzteil, Mega und zwei WROOM-32D-Boards. Physischer Zählbestand, Istmaße und elektrische Eignung stehen aus. |
 
 S3–S5 sind aus wiedergefundenem Gesprächskontext zusammengefasst. Sie werden nicht als neu vom Nutzer bestätigte Inventur oder wortgetreuer vollständiger Chat ausgegeben. Exakte Chattitel und Direktlinks wurden nicht geliefert. Kein erfundener Chatlink.
 
-Chronologiehinweis: Der früheste wiedergefundene Ballmaschinen-Satz liegt bei 08.07.2026 22:29 UTC, also 09.07.2026 00:29 in Deutschland. S1 erwähnt rückblickend außerdem eine Bestellrunde „27. Mai“; das ist eine alte Assistentenzuordnung, kein hier überprüfter Bestellbeleg. Die Gesamtchronologie ist daher nicht vollständig rekonstruiert.
+Chronologiehinweis: Der früheste wiedergefundene Ballmaschinen-Satz liegt bei 08.07.2026 22:29 UTC, also 09.07.2026 00:29 in Deutschland. Die übermittelten abgeschlossenen Rover-Bestellungen tragen das Datum 26.05.2026 [S12]. Die alte Angabe „27. Mai“ in S1 war eine rückblickende Zuordnung. Die Gesamtchronologie ist daher nicht vollständig rekonstruiert.
 
 ## Widersprüche und Leseregeln
 

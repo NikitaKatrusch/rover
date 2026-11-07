@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "compiled_on": "2026-11-05",
+  "compiled_on": "2026-11-07",
   "purpose": "Reported project dimensions for review; not a released Fusion build configuration",
   "length_unit": "mm",
   "physical_measurement_session_performed": false,
@@ -45,11 +45,11 @@
     {
       "parameter": "wheel_diameter",
       "reported_mm": 72,
-      "evidence_kind": "user_reported_variant",
-      "source": "S1",
+      "evidence_kind": "user_shared_completed_order",
+      "source": "S12",
       "physically_verified": false,
       "released_for_print": false,
-      "note": "64/70 sind alternative Angebotsvarianten"
+      "note": "Bestellte Variante 72 mm; Istmaß am Rad offen"
     },
     {
       "parameter": "wheel_width",
@@ -77,6 +77,33 @@
       "physically_verified": false,
       "released_for_print": false,
       "note": "Einbauzustand offen"
+    },
+    {
+      "parameter": "bearing_608zz_inner_diameter",
+      "reported_mm": 8,
+      "evidence_kind": "user_shared_completed_order",
+      "source": "S12",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Nennmaß des separat bestellten 608ZZ-10er-Packs"
+    },
+    {
+      "parameter": "bearing_608zz_outer_diameter",
+      "reported_mm": 22,
+      "evidence_kind": "user_shared_completed_order",
+      "source": "S12",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Nennmaß des separat bestellten 608ZZ-10er-Packs"
+    },
+    {
+      "parameter": "bearing_608zz_width",
+      "reported_mm": 7,
+      "evidence_kind": "user_shared_completed_order",
+      "source": "S12",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Nennmaß des separat bestellten 608ZZ-10er-Packs"
     },
     {
       "parameter": "base_plate_width",

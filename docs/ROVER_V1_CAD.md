@@ -34,7 +34,7 @@ Der Bericht deckt geschlossene Einzelnetze, Sollmaße, ausgewählte Freiräume u
 | Vorhanden dokumentiert | Einsatz in V1 | Auswahl bzw. Passprobe |
 |---|---|---|
 | 2 × 775, zwei Ø72-mm-Skater-Räder, 608ZZ und Schrauben | Die vorhandenen 775 sind diesmal für den Schusskopf angesetzt. Die vorhandenen Räder sind fürs Fahrwerk reserviert. Lager und Schrauben sind Kandidaten für die passenden Befestigungen. | Wellen, Naben, Befestigungsbilder und Eignung für Drehzahl und Last abgleichen. Schussräder sind als eigene Referenzkörper modelliert. |
-| ESP32, zwei L298N, vorhandenes 12-V-/10-A-Netzteil | ESP32 für Zustandslogik und Fahrbefehle. Treiberbauraum und Tischversorgung eingeplant. | Treiber je Motor und Messlast prüfen. Das Netzteil dient den gestuften Modulprüfungen. Mobiler Akku bleibt offen. |
+| Zwei ESP32-WROOM-32D bestellt, zwei L298N und ein EU-Netzteil 12 V/10 A [S12] | ESP32 für Zustandslogik und Fahrbefehle. Treiberbauraum und Tischversorgung eingeplant. | Treiber je Motor und Messlast prüfen. Das Netzteil dient den gestuften Modulprüfungen. Mobiler Akku bleibt offen. |
 | Alter Android und 360°-Servo | Smartphone-Hülle vorne als Kameraposition. Für die Klappen- und Neigeachsen sind Antriebsbauräume eingezeichnet. | Das Smartphone-Modell ist ein Platzhalter. Für genaue Winkel und Anschläge braucht der Servo Positionsrückmeldung oder einen passenden Positionsantrieb. |
 | JGB37-520 aus altem Warenkorb, mögliche weitere Motoren | Zwei langsame Fahrgetriebeantriebe und ein separater Schneckenantrieb als Bauraum. | Bestellung und tatsächliche Varianten sind offen. Bauraum Ø37 × 80 mm für Fahrmotoren ist ein Entwurfsmaß. |
 

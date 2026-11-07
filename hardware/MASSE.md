@@ -1,6 +1,6 @@
 # Maße, Herkunft und fehlende Messungen
 
-Stand: 05.11.2026. Alle Längen in mm, falls nicht anders angegeben. **Kein Bauteil wurde bei dieser Zusammenführung neu vermessen.** Eine Zahl mit zwei Nachkommastellen ist nicht automatisch eine genaue Istmessung.
+Stand 07.11.2026 mit Bestellabgleich. Alle Längen in mm, falls nicht anders angegeben. **Kein Bauteil wurde bei dieser Zusammenführung neu vermessen.** Eine Zahl mit zwei Nachkommastellen ist nicht automatisch eine genaue Istmessung.
 
 ## Bauteile
 
@@ -12,11 +12,11 @@ Stand: 05.11.2026. Alle Längen in mm, falls nicht anders angegeben. **Kein Baut
 | 775 Wellenlänge | 13 genannt; auch „0,55 in“ | Alte Bildinterpretation [S1] | Widerspruch: 0,55 in = 13,97 mm; nicht als sichere 13-mm-Messung verwenden |
 | 775 Wellenform | Glatt/rund, kein D-Flach erkennbar | Alte Fotoeinschätzung [S1] | Am echten Motor prüfen; kein stillschweigender D-Schaft im CAD |
 | 775 Montage | Unbekannt | Kein freigegebenes Bohrbild | Lochabstand, Gewinde, Schraubtiefe, Zentrierung, zulässige Klemmzone |
-| PU-Rad Außendurchmesser | 72 | Nutzer bestätigt Variante [S1] | Tatsächlicher Durchmesser unter Last |
+| Skater-Rad Außendurchmesser | 72 | Bestellte Variante [S12] und frühere Nutzerangabe [S1] | Tatsächlicher Durchmesser unter Last |
 | Radbreite | ca. 24 | Vom Nutzer kopiertes Angebot [S1] | Rad-/Nabenprofil und axiale Einbaubreite |
 | Rad-Lagersitz-Ø | ca. 22 | Dasselbe Angebot [S1] | Tiefe, Mittelschulter, beide Seiten und vorhandene Lager |
 | Lager-Innen-Ø | 8 | Dasselbe Angebot [S1] | Tatsächliches Lager/Einbauzustand |
-| 608ZZ | 8/22 erwähnt | Nennmaße aus Altchat | Lagerbreite und Einbau nicht neu verifiziert |
+| Separat bestelltes Lager 608ZZ | 8 × 22 × 7 (innen × außen × Breite) | Nennmaße im Bestelleintrag [S12] | Sitz, Wellenpassung und tatsächlich verbaute Lager prüfen |
 | JGB37-520 | Keine gesicherten Einbaumaße | Nur Teilefamilie im Warenkorb [S3] | Genaue Variante, Getriebekörper, Welle, Flansch/Bohrbild |
 | Servo 360° | Keine gesicherten Einbaumaße | Bestand und Variantenhinweis [S1] | Gehäuse, Laschen, Abtrieb, Hebel, Freiraum |
 | DS3218/MG996R-180° | Unbekannt | Warenkorb [S3] | Konkretes Exemplar und Besitz bestätigen |
