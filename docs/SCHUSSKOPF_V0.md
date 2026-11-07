@@ -25,6 +25,24 @@ Für einen bauähnlichen RS-775SM veröffentlicht Lihua bei 12 V zwei deutlich u
 
 Fusion öffnet das Modell als Netz in Millimetern. Aus dem Repository lässt es sich mit `node cad/Schusskopf/generate.js` reproduzieren. Die erzeugte 3MF wurde auf korrekte Einheiten, 15 geschlossene Einzelnetze und ausgewählte Freiräume geprüft. Die Prüfung der Maßketten ist kein Betriebsnachweis.
 
+## Einzug zwischen den Rollen prüfen
+
+In Schussrichtung gesehen bewegen sich die beiden einander zugewandten Rollenflächen beide zum Auslauf. Beim ersten Kontakt drückt die Rolle den Ball entlang der schrägen Verbindungslinie ihrer Mittelpunkte. Diese Kraft hat einen Anteil zurück zum Einlauf. Die Reibung muss diesen Anteil überwinden. Eine seitliche Abweichung führt bei den betrachteten Einstellungen zunächst zum Kontakt mit nur einer Rolle. Eine mittige Führung reduziert dieses Risiko.
+
+Die Draufsicht rechnet mit zwei Ø72-mm-Kreisquerschnitten und einem unverformten Ball auf Höhe der Rollenmitte. Bei zentrierter Zuführung ist die halbe Rollenachsdistanz `a = R + Spalt/2`. Ist der Ball größer als der Spalt, liegt der erste Kontakt `x = sqrt((R + r)^2 − a^2)` vor der Rollenachse. Die theoretische Einzugsgrenze liegt dann bei `µ = x/a`. Bei Ball-Ø kleiner oder gleich Spalt entsteht auf der Mittellinie kein Klemmdruck. Für einseitigen Erstkontakt wird nur die Lage berechnet. Rundprofil, Ballverformung, Rollendynamik und tatsächliche Reibung bleiben praktisch zu prüfen. [Quelle zur Geometrie des Einzugs](https://www.ideals.illinois.edu/items/2169/bitstreams/8172/data.pdf)
+
+| Ball-Ø | Spalt | Versatz | Erstkontakt vor der Achse | Ergebnis des vereinfachten Modells |
+|---:|---:|---:|---:|---|
+| 63,5 mm | 65 mm | 0 mm | — | 1,5 mm Luft |
+| 66,0 mm | 65 mm | 0 mm | 8,29 mm | Beidseitig, µ ≈ 0,121 |
+| 67,7 mm | 65 mm | 0 mm | 13,67 mm | Beidseitig, µ ≈ 0,200 |
+| 67,7 mm | 62 mm | 0 mm | 19,75 mm | Beidseitig, µ ≈ 0,295 |
+| 67,7 mm | 65 mm | 3 mm | 24,26 mm | Einseitiger Erstkontakt |
+
+**Stromlose Passprobe mit den bestellten Skaterrollen.** Tatsächlichen Ball und Rollen messen und die breiteste Rollenfläche auf Ballmitte ausrichten. Auf festen Testachsen frei laufend montieren. Mit einem Spalt knapp über dem tatsächlichen Ball-Ø zuerst den freien Durchgang kontrollieren. Dann in kleinen Schritten enger stellen. Den Ball mit einem Schieber mittig bis an die Rollen bringen, den Schieber entlasten und beide Rollen von außen langsam in Einzugsrichtung von Hand drehen. Pro Einstellung festhalten, ob der Ball selbstständig eingezogen wird, zurückkommt oder klemmt. Danach einen leicht versetzten Start wiederholen. Bei zurückgedrücktem Ball zuerst Zentrierung, Kontakthöhe und einen etwas weiteren Spalt vergleichen. Eine spätere gesicherte Einzelballzufuhr kann den Ball bei Bedarf definiert bis in den Greifbereich bringen.
+
+Die Lager der Skaterrollen lassen den Radkörper gegenüber der Achse frei laufen. Für einen späteren Motorantrieb muss die Nabe das Drehmoment am Radkörper übertragen. Die vorhandenen Skaterrollen dienen hier der stromlosen Passprobe. Für Motorbetrieb sind Wurfrollen und Naben mit passender Drehzahleignung und ein geschützter Einzug zu prüfen. [Beispiel für Radaufbau mit Achse und Lagern](https://www.rollerblade.com/assets/pdf/18_RB_Skate_To_Ski_Pamphlet_Print_v2.pdf)
+
 ## Inbetriebnahme in Stufen
 
 1. **Stromlose Passprobe.** Bei getrennter Energieversorgung den Ball durch Einlauf, Rollenspalt und Auslauf führen. Dabei Ball, Rad und Nabe am realen Aufbau vermessen und die Einstellbarkeit prüfen.
