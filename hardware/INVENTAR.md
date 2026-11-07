@@ -8,7 +8,7 @@ Stand 07.11.2026. S12 ergänzt die historischen Angaben um vom Nutzer übermitte
 |---|---:|---|---|
 | 775-DC-Motor, 12 V, Variante 15.000 U/min und „no Teeth“ (ohne Ritzel) | 2 bestellt | S12: 26.05.2026; frühere Nutzermotortests S1 | In V1 als Schussmotoren vorgesehen. Drehzahl unter Last, Anlaufstrom, Welle und Befestigung offen |
 | Skater-Rad Ø72 mm, Angebot mit Lagern | 2 bestellt | S12: 26.05.2026; frühere Maßangaben S1 | Fahrwerk. Einbauzustand und Radbreite prüfen |
-| L298N-Dual-H-Brücken-Modul | 2 bestellt | S12: 26.05.2026; frühere Zuordnung S1/S2 | Modulvariante, Pinbelegung und Eignung für den jeweiligen Motor offen |
+| L298N-Dual-H-Brücken-Modul | 2 bestellt | S12: 26.05.2026. S13: öffentliche Artikelnummer 1005008221386573 und Angebotsfoto | Rote Trägerplatine mit Kühlkörper und Schraubklemmen. Platinenaufdruck, Jumper-Funktion und Belastbarkeit des konkreten Moduls stehen aus |
 | ESP32 DevKitC mit WROOM-32D | 2 bestellt | S12: 08.11.2025, einmal Variante „ESP32-32D“ und einmal „32D-Type-C-1PCS“; S1 belegt den Testkontext | WLAN-Steuerung. Genaue Kontur und Stiftleisten der eingesetzten Platine abgleichen |
 | Arduino Mega 2560, CH340, USB-C | 1 bestellt | S12: 26.05.2026, Variante „MEGA2560 CH340 TYPEC“ | Alternative für den Motor-Logikversuch; ESP32 für WLAN vorgesehen |
 | HC-05 New Version | 1 bestellt | S12: 26.05.2026 | Bluetooth-Reserve aus dem Konzept der Ballmaschine |
