@@ -1,5 +1,7 @@
 # Ergänzter Projektstand: Ballsammler-Rover
 
+> Historischer Stand. Für den aktuellen Schneckenaufbau und den getesteten Fusion-Zugriff siehe [Projektstand vom 07.11.2026](SCHNECKENROVER_2026-11-07.md) und [Fusion-Anbindung](FUSION_ANBINDUNG.md).
+
 Stand: 05.11.2026 · Autor dieser Zusammenführung: Codex · Repository: NikitaKatrusch/rover.
 
 Ab 05.11.2026 übernimmt Codex auf Nikitas Wunsch die weitere Projektarbeit allein. Diese Datei ergänzt die bestehende README und die ursprünglichen Chatdateien. Sie ersetzt sie nicht. Quellenkennungen stehen in [QUELLEN_UND_ABGLEICH.md](QUELLEN_UND_ABGLEICH.md). Nicht dokumentiert bedeutet nicht automatisch nicht vorhanden.

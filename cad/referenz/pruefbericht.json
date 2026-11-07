@@ -1,0 +1,248 @@
+{
+  "status": "verified",
+  "manufacturing_release": false,
+  "revision": "v0-bauraum",
+  "clearances_mm": {
+    "ball_to_plate_mm": 6.0,
+    "ball_to_motor_inner_face_each_side_mm": 3.5,
+    "ball_channel_total_play_with_walls_mm": 3.0,
+    "wheel_to_plate_side_mm": 3,
+    "motor_top_to_plate_mm": 13.7,
+    "wheel_track_mm": 245.0,
+    "ball_center_to_axle_x_mm": 100
+  },
+  "dimension_sources": {
+    "base_plate_length": {
+      "parameter": "base_plate_length",
+      "reported_mm": 235,
+      "evidence_kind": "historical_cad_readback",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Ältere Entwürfe waren 305/307 lang"
+    },
+    "base_plate_width": {
+      "parameter": "base_plate_width",
+      "reported_mm": 215,
+      "evidence_kind": "historical_cad_readback",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Späterer Screenshotstand, aktuelle CAD-Datei fehlt"
+    },
+    "base_plate_thickness": {
+      "parameter": "base_plate_thickness",
+      "reported_mm": 5,
+      "evidence_kind": "user_reported_cad_dimension",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Druck-Istmaß fehlt"
+    },
+    "wheel_diameter": {
+      "parameter": "wheel_diameter",
+      "reported_mm": 72,
+      "evidence_kind": "user_reported_variant",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "64/70 sind alternative Angebotsvarianten"
+    },
+    "wheel_width": {
+      "parameter": "wheel_width",
+      "reported_mm": 24,
+      "evidence_kind": "supplier_text_pasted_by_user",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Ungefährer Angebotswert"
+    },
+    "motor_775_body_diameter": {
+      "parameter": "motor_775_body_diameter",
+      "reported_mm": 44.6,
+      "evidence_kind": "historical_assistant_recall",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Gehäuse, nicht Zentrierbund"
+    },
+    "motor_775_body_length": {
+      "parameter": "motor_775_body_length",
+      "reported_mm": 71,
+      "evidence_kind": "historical_assistant_recall",
+      "source": "S1",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Ohne Welle; Anschlüsse gesondert"
+    },
+    "ball_diameter": {
+      "parameter": "ball_diameter",
+      "reported_mm": 66,
+      "evidence_kind": "historical_assistant_discussion",
+      "source": "S5",
+      "physically_verified": false,
+      "released_for_print": false,
+      "note": "Keine konkrete Ballmessung im verfügbaren Beleg"
+    }
+  },
+  "layout_assumptions_mm": {
+    "rear_axle_x": -80,
+    "plate_underside_z": 72,
+    "wheel_to_plate_side_gap": 3,
+    "reference_ball_x": 20,
+    "ball_guide_wall": 2
+  },
+  "bodies": [
+    {
+      "name": "Grundplatte - Referenz",
+      "expected_xyz_mm": [
+        235,
+        215,
+        5
+      ],
+      "actual_xyz_mm": [
+        235.0,
+        215.0,
+        5.0
+      ],
+      "expected_min_xyz_mm": [
+        -117.5,
+        -107.5,
+        72
+      ],
+      "actual_min_xyz_mm": [
+        -117.5,
+        -107.5,
+        72.0
+      ]
+    },
+    {
+      "name": "Rad links - Hülle",
+      "expected_xyz_mm": [
+        72,
+        24,
+        72
+      ],
+      "actual_xyz_mm": [
+        72.0,
+        24.0,
+        72.0
+      ],
+      "expected_min_xyz_mm": [
+        -116.0,
+        110.5,
+        0.0
+      ],
+      "actual_min_xyz_mm": [
+        -116.0,
+        110.5,
+        0.0
+      ]
+    },
+    {
+      "name": "Rad rechts - Hülle",
+      "expected_xyz_mm": [
+        72,
+        24,
+        72
+      ],
+      "actual_xyz_mm": [
+        72.0,
+        24.0,
+        72.0
+      ],
+      "expected_min_xyz_mm": [
+        -116.0,
+        -134.5,
+        0.0
+      ],
+      "actual_min_xyz_mm": [
+        -116.0,
+        -134.5,
+        0.0
+      ]
+    },
+    {
+      "name": "775 links - Hülle",
+      "expected_xyz_mm": [
+        44.6,
+        71,
+        44.6
+      ],
+      "actual_xyz_mm": [
+        44.6,
+        71.0,
+        44.6
+      ],
+      "expected_min_xyz_mm": [
+        -102.3,
+        36.5,
+        13.7
+      ],
+      "actual_min_xyz_mm": [
+        -102.3,
+        36.5,
+        13.7
+      ]
+    },
+    {
+      "name": "775 rechts - Hülle",
+      "expected_xyz_mm": [
+        44.6,
+        71,
+        44.6
+      ],
+      "actual_xyz_mm": [
+        44.6,
+        71.0,
+        44.6
+      ],
+      "expected_min_xyz_mm": [
+        -102.3,
+        -107.5,
+        13.7
+      ],
+      "actual_min_xyz_mm": [
+        -102.3,
+        -107.5,
+        13.7
+      ]
+    },
+    {
+      "name": "Ball - Referenz",
+      "expected_xyz_mm": [
+        66,
+        66,
+        66
+      ],
+      "actual_xyz_mm": [
+        66.0,
+        66.0,
+        66.0
+      ],
+      "expected_min_xyz_mm": [
+        -13.0,
+        -33.0,
+        0.0
+      ],
+      "actual_min_xyz_mm": [
+        -13.0,
+        -33.0,
+        0.0
+      ]
+    }
+  ],
+  "auger_trial_mm": {
+    "core_diameter": 20,
+    "housing_inner_diameter": 156,
+    "pitch": 80,
+    "flight_axial_thickness": 4
+  },
+  "auger_trial_clearances_mm": {
+    "min_housing_id_at_zero_radial_play": 152,
+    "radial_play": 2.0,
+    "axial_play_at_fixed_angle": 10
+  },
+  "fusion_archive": "Rover_V0_Bauraum.f3d",
+  "step": "Rover_V0_Bauraum.step"
+}

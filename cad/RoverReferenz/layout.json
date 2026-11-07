@@ -1,0 +1,19 @@
+{
+  "revision": "v0-bauraum",
+  "units": "mm",
+  "axes": {"x": "forward", "y": "left", "z": "up", "floor_z": 0},
+  "layout_assumptions_mm": {
+    "rear_axle_x": -80,
+    "plate_underside_z": 72,
+    "wheel_to_plate_side_gap": 3,
+    "reference_ball_x": 20,
+    "ball_guide_wall": 2
+  },
+  "auger_trial_mm": {
+    "core_diameter": 20,
+    "housing_inner_diameter": 156,
+    "pitch": 80,
+    "flight_axial_thickness": 4
+  },
+  "use": "Bauraumprüfung mit überlieferten Maßen. Einbaupositionen sind Modellannahmen."
+}

@@ -6,8 +6,8 @@ Stand dieser Ergänzung: 2026-11-05. Vor jeder Arbeit den aktuellen Remote-Stand
 
 ## Zuerst lesen
 
-1. `README.md` für die Übersicht und neue Ergänzungen anderer Autoren.
-2. `docs/PROJEKTSTAND_CODEX_2026-11-05.md` für den ergänzten Systemstand.
+1. `README.md` und `docs/SCHNECKENROVER_2026-11-07.md` für die aktuelle Konstruktion.
+2. `docs/PROJEKTSTAND_CODEX_2026-11-05.md` für den historischen Systemstand.
 3. `hardware/INVENTAR.md` und `hardware/MASSE.md` vor Teilewahl oder CAD.
 4. `docs/QUELLEN_UND_ABGLEICH.md` für Quellen, Widersprüche und Nachweise.
 5. `docs/FUSION_ANBINDUNG.md` vor Arbeiten an Fusion.

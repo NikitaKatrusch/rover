@@ -15,6 +15,8 @@ Zusammenführung vom 05.11.2026. Nur projektbezogene Informationen; keine sachfr
 | S7 | Frühere Nutzerautorisierung vom 05.11.2026 | Beide Assistenten sollten zunächst Wissen im Repo zusammenführen. Fusion für maßhaltige Konstruktion gewünscht. Die Zuständigkeit wurde anschließend durch S9 aktualisiert. |
 | S8 | Claudes README, Commit 7faeb8405e78606ca203fc4d4415599080a89c14 | Während der Zusammenführung eingetroffen und gelesen; als historische Projektquelle erhalten. |
 | S9 | Neueste Nutzeranweisung vom 05.11.2026: „Claude vergessen wir nur noch du arbeitest da dran“ | Weitere Projektarbeit allein durch Codex. Keine weitere Abstimmung oder Mitarbeit von Claude voraussetzen; vorhandenes Projektwissen bleibt nutzbar. |
+| S10 | Nikitas Konzept und Tinkercad-Screenshot „Neat Kasi“ vom 07.11.2026 | Ball unter dem Rover, hinten Schnecke, Speicher und Vereinzelung, Schussräder neigen, Rover dreht, Android-Kamera und Netzteil zuerst. Screenshot zeigt Konzeptgeometrie, keine verifizierten Istmaße. |
+| S11 | Fusion-Lauf und [Prüfbericht](../cad/referenz/pruefbericht.json) vom 07.11.2026 | B-Rep-Abmessungen und Einbaupositionen der Referenzkörper. Nachweis für die erzeugte CAD-Geometrie. |
 
 S3–S5 sind aus wiedergefundenem Gesprächskontext zusammengefasst. Sie werden nicht als neu vom Nutzer bestätigte Inventur oder wortgetreuer vollständiger Chat ausgegeben. Exakte Chattitel und Direktlinks wurden nicht geliefert. Kein erfundener Chatlink.
 

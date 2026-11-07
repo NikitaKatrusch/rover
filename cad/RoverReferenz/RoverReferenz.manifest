@@ -1,0 +1,8 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "Rover project",
+  "description": {"": "Erzeugt und vermisst die Rover-V0-Referenzbaugruppe."},
+  "version": "0.1.0",
+  "supportedOS": "windows|mac"
+}
