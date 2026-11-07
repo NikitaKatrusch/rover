@@ -2,11 +2,11 @@
 
 Dieses Repository ist die zentrale Projektablage für Nikitas Ballsammler-Rover.
 Nikita hat am 05.11.2026 festgelegt: Ab jetzt übernimmt Codex die weitere Projektarbeit allein. Bestehende Beiträge und Quellen bleiben als Projektwissen erhalten. Eine Abstimmung mit Claude ist kein Arbeitsschritt mehr.
-Stand dieser Ergänzung: 2026-11-05. Vor jeder Arbeit den aktuellen Remote-Stand lesen.
+Stand dieser Ergänzung: 2026-11-07. Vor jeder Arbeit den aktuellen Remote-Stand lesen.
 
 ## Zuerst lesen
 
-1. `README.md` und `docs/SCHNECKENROVER_2026-11-07.md` für die aktuelle Konstruktion.
+1. `README.md` und `docs/SCHUSSKOPF_V0.md` für die aktuelle Baustufe.
 2. `docs/PROJEKTSTAND_CODEX_2026-11-05.md` für den historischen Systemstand.
 3. `hardware/INVENTAR.md` und `hardware/MASSE.md` vor Teilewahl oder CAD.
 4. `docs/QUELLEN_UND_ABGLEICH.md` für Quellen, Widersprüche und Nachweise.
@@ -31,4 +31,4 @@ Stand dieser Ergänzung: 2026-11-05. Vor jeder Arbeit den aktuellen Remote-Stand
 
 ## Projektpräferenzen
 
-3D-Druck ist ein gewünschter Bestandteil des Projekts. Kein Aluprofilrahmen oder gekauftes RC-Chassis als stillschweigender Ersatz. Nikita möchte einen zusammenhängenden, detaillierten Systemplan und passende Bauteile, keine langen Drucke auf Basis erratener Passungen. Zuerst Fahren und Aufnehmen zuverlässig machen; Schießen als spätere Erweiterung vorbereiten.
+3D-Druck ist ein gewünschter Bestandteil des Projekts. Kein Aluprofilrahmen oder gekauftes RC-Chassis als stillschweigender Ersatz. Nikita möchte einen zusammenhängenden, detaillierten Systemplan und passende Bauteile, keine langen Drucke auf Basis erratener Passungen. Seit dem 07.11.2026 zuerst den stationären Schusskopf mit Einzelballzufuhr entwickeln. Fahrwerk und Sammlung folgen nach der Prüfung am Tisch.

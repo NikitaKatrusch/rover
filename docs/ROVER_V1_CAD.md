@@ -1,5 +1,7 @@
 # Rover V1 mit Schneckenförderer
 
+> Der Gesamtentwurf dient als Integrationsreferenz. Die aktuelle Baustufe ist der [stationäre Schusskopf](SCHUSSKOPF_V0.md).
+
 Digitaler Konstruktionsstand vom 07.11.2026. Die V1 setzt Nikitas Ballweg vom Unterboden bis zum neigbaren Schusskopf um. Modell, Auslegung und Prüfbericht gehören zusammen.
 
 | Datei | Inhalt |
@@ -44,4 +46,4 @@ Der Bericht deckt geschlossene Einzelnetze, Sollmaße, ausgewählte Freiräume u
 2. Im Einlauftest wird je ein Ball aus unterschiedlichen seitlichen Lagen und bei unterschiedlichen Schneckenphasen zugeführt. Die flache Tasche stabilisiert die Position, die erste Windung greift von unten, die feste Führung hält die Bahn. Eine weiche Einzugsrolle bleibt als Option, falls der Test zu viele Fehlaufnahmen zeigt.
 3. Am oberen Ende soll der feste Abstreifer den Ball über die konturierte Rutsche in den Speicher lenken. Schüttung, Abstreifkontakt und Rückstau werden mit echten Bällen beobachtet. Ein Sensor am Auslauf ist für die spätere Bestätigung der Aufnahme vorgesehen.
 4. Zur Ausgabe hält zunächst der untere Schieber den ersten Ball. Der obere schließt und hält die restliche Schlange. Der untere öffnet und wartet auf bestätigten Ballabgang, schließt wieder und gibt erst dann den oberen frei. Die Schussfreigabe ist mit Stillstand, Kopfstellung, Schutzabdeckung und Raddrehzahl zu verknüpfen. Der Rover dreht für die horizontale Richtung.
-5. Zuerst Aufnahme und Förderung, dann Trichter mit Schiebern, zuletzt den gekapselten Schusskopf separat prüfen. Das vollständige V1-Modell gibt die Zielgeometrie für diese Schritte vor.
+5. Für die Integration nach dem stationären Schussversuch Aufnahme und Förderung sowie Trichter und Schieber einzeln prüfen. Das V1-Modell ist die Zielgeometrie für die gemeinsame Baugruppe.

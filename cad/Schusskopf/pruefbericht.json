@@ -1,0 +1,23 @@
+{
+  "revision": "schusskopf-v0-passmodell",
+  "units": "mm",
+  "meshBodies": 15,
+  "suitableForPoweredTest": false,
+  "wheelAxisSpacingMm": 137,
+  "wheelAxisSpacingRangeMm": [
+    134,
+    142
+  ],
+  "slideTravelPerSideMm": 4,
+  "ballAndWheelOverlapAtNominalGapMm": [
+    -1.5,
+    2.7
+  ],
+  "clearancesMm": {
+    "guideFreeWidthMm": 6.3,
+    "minGuideToWheelLongitudinalMm": 7.19,
+    "baseLateralReserveMm": 9,
+    "wheelBottomAboveGuideFloorMm": 21.85,
+    "maxGapFreeWidthMm": 2.3
+  }
+}

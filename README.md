@@ -6,7 +6,7 @@ Der Rover soll Padel-Bälle vom Boden aufnehmen, speichern und gezielt wieder au
 
 Der Ball läuft mittig unter dem Rover bis zur hinteren Schnecke. Sie hebt ihn in den Trichter. Ein Vereinzelner gibt pro Auslösung einen Ball zu den beiden neigbaren Schussrädern frei. Links und rechts zielt der Rover durch Drehen des Fahrwerks. Als Kamera ist ein altes Android vorgesehen, die Erkennung läuft zunächst am Mac. Die ersten Module werden am vorhandenen Netzteil getestet.
 
-Priorität haben der freie Weg unter dem Chassis und die zuverlässige Aufnahme in die erste Schneckenwindung. Die Baugruppen für Speicher, Vereinzelung und Schuss bauen auf dieser Schnittstelle auf. Der aktuelle Aufbau und die Abnahmeschritte stehen im [Entwicklungsstand](docs/SCHNECKENROVER_2026-11-07.md).
+**Aktuelle Baustufe ist der stationäre Schusskopf.** Der Nutzer priorisiert den Einzelball-Abschuss am Tisch. Fahrwerk und Sammelmechanismus folgen später. [Schusskopf V0, Bauraummodell und Prüfschritte](docs/SCHUSSKOPF_V0.md)
 
 ## CAD und Projektdateien
 

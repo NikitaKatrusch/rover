@@ -1,0 +1,33 @@
+{
+  "revision": "schusskopf-v0-passmodell",
+  "deck": {
+    "length": 240,
+    "width": 232,
+    "thickness": 6,
+    "rearX": -135
+  },
+  "feed": {
+    "innerWidth": 74,
+    "wall": 3,
+    "entryX": -126,
+    "exitX": 98,
+    "sideWallEndX": 31,
+    "wallHeight": 29
+  },
+  "rollers": {
+    "diameter": 72,
+    "width": 24,
+    "gap": 65,
+    "gapRange": [
+      62,
+      70
+    ],
+    "centerZ": 50
+  },
+  "ball": {
+    "diameters": [
+      63.5,
+      67.7
+    ]
+  }
+}
