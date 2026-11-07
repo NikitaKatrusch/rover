@@ -43,6 +43,23 @@ Die Draufsicht rechnet mit zwei Ø72-mm-Kreisquerschnitten und einem unverformte
 
 Die Lager der Skaterrollen lassen den Radkörper gegenüber der Achse frei laufen. Für einen späteren Motorantrieb muss die Nabe das Drehmoment am Radkörper übertragen. Die vorhandenen Skaterrollen dienen hier der stromlosen Passprobe. Für Motorbetrieb sind Wurfrollen und Naben mit passender Drehzahleignung und ein geschützter Einzug zu prüfen. [Beispiel für Radaufbau mit Achse und Lagern](https://www.rollerblade.com/assets/pdf/18_RB_Skate_To_Ski_Pamphlet_Print_v2.pdf)
 
+## 3D-Kontaktversuch und einstellbare Führung
+
+Der [3D-Solver](../cad/Schusskopf/simulate.js) integriert die räumliche Bewegung und Rotation einer 58-g-Kugel im CAD-Einlauf. Boden, Führung und zwei Ø72-mm-Rollen mit 24 mm Breite haben Kontaktkräfte aus Feder, Dämpfung und begrenzter Gleitreibung. Die Rollen behalten eine konstante Oberflächengeschwindigkeit von 2 m/s. Ball und Rollen werden durch idealisierte Formen angenähert. Das Modell enthält keine gemessene Verformung, kein gemessenes Reifenprofil, kein Motormoment und keinen elektrischen Antrieb.
+
+Der [Variantenvergleich](../cad/Schusskopf/sweep.js) prüft 60 Einstellungen mit je 72 Modellfällen, insgesamt 4.320 Läufe. Er variiert drei Ballgrößen (63,5, 66 und 67,7 mm), Reibwerte von 0,12, 0,20 und 0,32, effektive Kontaktsteifigkeit (3 bzw. 8 N/mm), Zuführgeschwindigkeit (0,10 bzw. 0,22 m/s) und Mittellage bzw. 90 % des seitlichen Spiels. Die Reib- und Steifigkeitswerte sind Annahmen für die Sensitivitätsprüfung. Als Einzug zählt ein beidseitiger Rollenkontakt und das Erreichen des Auslaufs mit einer Geschwindigkeit mindestens 0,05 m/s über der Zuführgeschwindigkeit.
+
+| Einstellung | Auslauf mit Einzug |
+|---|---:|
+| CAD-Referenz, Spalt 65 mm und Führung 74 mm | 43 von 72 |
+| Bester fester Spalt mit bestehender Führung, 63 mm | 54 von 72 |
+| Ball-Ø minus 0,5 mm und Führung Ball-Ø plus 2 mm | 72 von 72 bei Nennmaß, 9 von 72 bei 0,4 mm größerem Spalt |
+| Ball-Ø minus 1,0 mm und Führung Ball-Ø plus 2 mm | 72 von 72 bei Nennmaß und bei jeweils −0,4 und +0,4 mm Spaltabweichung |
+
+Die Zusatzprüfung wiederholt sechs Toleranzfälle mit halbiertem Zeitschritt. Die Einzug-Zählwerte blieben gleich. Bei angepasstem Spalt von Ball-Ø minus 1 mm und unveränderter 74-mm-Führung gab es bei Nennmaß ebenfalls 72 Einzüge. Die 2-mm-Zugabe ist ein separat getesteter Vorschlag für eine engere Zentrierung. Die [Ergebnisdatei](../cad/Schusskopf/einzug-simulation.json) lässt sich mit `node cad/Schusskopf/sweep.js` reproduzieren.
+
+Für den ersten Prototyp Rollenspalt und Führung auf den gemessenen Ball einstellen. Bei Ø66 mm ergeben sich **65 mm Rollenspalt und 68 mm Führungsbreite**. Die Rechnung dient als Startpunkt für eine stromlose Probe mit tatsächlichen Rollen. Die unbekannten Material- und Profilwerte verhindern eine Betriebsfreigabe oder eine Aussage zur Schussweite.
+
 ## Inbetriebnahme in Stufen
 
 1. **Stromlose Passprobe.** Bei getrennter Energieversorgung den Ball durch Einlauf, Rollenspalt und Auslauf führen. Dabei Ball, Rad und Nabe am realen Aufbau vermessen und die Einstellbarkeit prüfen.

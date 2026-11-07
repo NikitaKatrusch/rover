@@ -1,0 +1,1158 @@
+{
+  "parameters": {
+    "ballSizes": [
+      63.5,
+      66,
+      67.7
+    ],
+    "frictionValues": [
+      0.12,
+      0.2,
+      0.32
+    ],
+    "stiffnessValues": [
+      3000,
+      8000
+    ],
+    "feedSpeeds": [
+      0.1,
+      0.22
+    ],
+    "offsetFractions": [
+      0,
+      0.9
+    ],
+    "rollerSpeed": 2
+  },
+  "perCandidate": 72,
+  "candidateCount": 60,
+  "runs": 4320,
+  "existing": {
+    "gap": 65,
+    "outcomes": {
+      "fed": 43,
+      "passed": 14,
+      "rebound": 1,
+      "sideways": 0,
+      "stalled": 14
+    },
+    "byDiameter": {
+      "66": 24,
+      "63.5": 0,
+      "67.7": 19
+    },
+    "peakForceN": 11.07
+  },
+  "bestFixedExistingGuide": {
+    "gap": 63,
+    "outcomes": {
+      "fed": 54,
+      "passed": 1,
+      "rebound": 1,
+      "sideways": 0,
+      "stalled": 16
+    },
+    "byDiameter": {
+      "66": 18,
+      "63.5": 23,
+      "67.7": 13
+    },
+    "peakForceN": 19.32
+  },
+  "bestFixedCentered": {
+    "gap": 63,
+    "guideClearance": 2,
+    "outcomes": {
+      "fed": 56,
+      "passed": 0,
+      "rebound": 1,
+      "sideways": 0,
+      "stalled": 15
+    },
+    "byDiameter": {
+      "66": 18,
+      "63.5": 24,
+      "67.7": 14
+    },
+    "peakForceN": 19.32
+  },
+  "bestAdjustableExistingGuide": {
+    "compression": 1,
+    "outcomes": {
+      "fed": 72,
+      "passed": 0,
+      "rebound": 0,
+      "sideways": 0,
+      "stalled": 0
+    },
+    "byDiameter": {
+      "66": 24,
+      "63.5": 24,
+      "67.7": 24
+    },
+    "peakForceN": 4.09
+  },
+  "bestAdjustableCentered": {
+    "compression": 0.5,
+    "guideClearance": 2,
+    "outcomes": {
+      "fed": 72,
+      "passed": 0,
+      "rebound": 0,
+      "sideways": 0,
+      "stalled": 0
+    },
+    "byDiameter": {
+      "66": 24,
+      "63.5": 24,
+      "67.7": 24
+    },
+    "peakForceN": 2.04
+  },
+  "toleranceChecks": [
+    {
+      "compression": 0.5,
+      "gapError": -0.4,
+      "fed": 72,
+      "fedAtHalfTimeStep": 72,
+      "peakForceN": 3.68
+    },
+    {
+      "compression": 0.5,
+      "gapError": 0,
+      "fed": 72,
+      "fedAtHalfTimeStep": 72,
+      "peakForceN": 2.05
+    },
+    {
+      "compression": 0.5,
+      "gapError": 0.4,
+      "fed": 9,
+      "fedAtHalfTimeStep": 9,
+      "peakForceN": 0.95
+    },
+    {
+      "compression": 1,
+      "gapError": -0.4,
+      "fed": 72,
+      "fedAtHalfTimeStep": 72,
+      "peakForceN": 5.73
+    },
+    {
+      "compression": 1,
+      "gapError": 0,
+      "fed": 72,
+      "fedAtHalfTimeStep": 72,
+      "peakForceN": 4.09
+    },
+    {
+      "compression": 1,
+      "gapError": 0.4,
+      "fed": 72,
+      "fedAtHalfTimeStep": 72,
+      "peakForceN": 2.45
+    }
+  ],
+  "candidateResults": [
+    {
+      "gap": 62,
+      "outcomes": {
+        "fed": 50,
+        "passed": 0,
+        "rebound": 2,
+        "sideways": 0,
+        "stalled": 20
+      },
+      "byDiameter": {
+        "66": 16,
+        "63.5": 24,
+        "67.7": 10
+      },
+      "peakForceN": 23.45
+    },
+    {
+      "gap": 62.5,
+      "outcomes": {
+        "fed": 51,
+        "passed": 0,
+        "rebound": 2,
+        "sideways": 0,
+        "stalled": 19
+      },
+      "byDiameter": {
+        "66": 17,
+        "63.5": 24,
+        "67.7": 10
+      },
+      "peakForceN": 21.38
+    },
+    {
+      "gap": 63,
+      "outcomes": {
+        "fed": 54,
+        "passed": 1,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 16
+      },
+      "byDiameter": {
+        "66": 18,
+        "63.5": 23,
+        "67.7": 13
+      },
+      "peakForceN": 19.32
+    },
+    {
+      "gap": 63.5,
+      "outcomes": {
+        "fed": 35,
+        "passed": 14,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 22
+      },
+      "byDiameter": {
+        "66": 21,
+        "63.5": 0,
+        "67.7": 14
+      },
+      "peakForceN": 17.26
+    },
+    {
+      "gap": 64,
+      "outcomes": {
+        "fed": 41,
+        "passed": 14,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 17
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 17
+      },
+      "peakForceN": 15.2
+    },
+    {
+      "gap": 64.5,
+      "outcomes": {
+        "fed": 42,
+        "passed": 14,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 15
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 18
+      },
+      "peakForceN": 13.14
+    },
+    {
+      "gap": 65,
+      "outcomes": {
+        "fed": 43,
+        "passed": 14,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 14
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 19
+      },
+      "peakForceN": 11.07
+    },
+    {
+      "gap": 65.5,
+      "outcomes": {
+        "fed": 45,
+        "passed": 15,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 12
+      },
+      "byDiameter": {
+        "66": 23,
+        "63.5": 0,
+        "67.7": 22
+      },
+      "peakForceN": 9.02
+    },
+    {
+      "gap": 66,
+      "outcomes": {
+        "fed": 24,
+        "passed": 28,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 20
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 24
+      },
+      "peakForceN": 6.96
+    },
+    {
+      "gap": 66.5,
+      "outcomes": {
+        "fed": 24,
+        "passed": 28,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 20
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 24
+      },
+      "peakForceN": 4.91
+    },
+    {
+      "gap": 67,
+      "outcomes": {
+        "fed": 24,
+        "passed": 28,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 20
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 24
+      },
+      "peakForceN": 2.87
+    },
+    {
+      "gap": 67.5,
+      "outcomes": {
+        "fed": 13,
+        "passed": 38,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 21
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 13
+      },
+      "peakForceN": 1.73
+    },
+    {
+      "gap": 68,
+      "outcomes": {
+        "fed": 0,
+        "passed": 40,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 32
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 1.51
+    },
+    {
+      "gap": 68.5,
+      "outcomes": {
+        "fed": 0,
+        "passed": 40,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 32
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 1.23
+    },
+    {
+      "gap": 69,
+      "outcomes": {
+        "fed": 0,
+        "passed": 40,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 32
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 1.08
+    },
+    {
+      "gap": 69.5,
+      "outcomes": {
+        "fed": 0,
+        "passed": 38,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 34
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0.95
+    },
+    {
+      "gap": 70,
+      "outcomes": {
+        "fed": 0,
+        "passed": 38,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 34
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0.87
+    },
+    {
+      "compression": 0.5,
+      "outcomes": {
+        "fed": 69,
+        "passed": 3,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 0
+      },
+      "byDiameter": {
+        "66": 23,
+        "63.5": 23,
+        "67.7": 23
+      },
+      "peakForceN": 2.21
+    },
+    {
+      "compression": 1,
+      "outcomes": {
+        "fed": 72,
+        "passed": 0,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 0
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 24,
+        "67.7": 24
+      },
+      "peakForceN": 4.09
+    },
+    {
+      "compression": 1.5,
+      "outcomes": {
+        "fed": 72,
+        "passed": 0,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 0
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 24,
+        "67.7": 24
+      },
+      "peakForceN": 6.14
+    },
+    {
+      "gap": 62,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 50,
+        "passed": 0,
+        "rebound": 3,
+        "sideways": 0,
+        "stalled": 19
+      },
+      "byDiameter": {
+        "66": 16,
+        "63.5": 24,
+        "67.7": 10
+      },
+      "peakForceN": 23.45
+    },
+    {
+      "gap": 62.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 52,
+        "passed": 0,
+        "rebound": 2,
+        "sideways": 0,
+        "stalled": 18
+      },
+      "byDiameter": {
+        "66": 18,
+        "63.5": 24,
+        "67.7": 10
+      },
+      "peakForceN": 21.38
+    },
+    {
+      "gap": 63,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 56,
+        "passed": 0,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 15
+      },
+      "byDiameter": {
+        "66": 18,
+        "63.5": 24,
+        "67.7": 14
+      },
+      "peakForceN": 19.32
+    },
+    {
+      "gap": 63.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 36,
+        "passed": 16,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 19
+      },
+      "byDiameter": {
+        "66": 22,
+        "63.5": 0,
+        "67.7": 14
+      },
+      "peakForceN": 17.26
+    },
+    {
+      "gap": 64,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 41,
+        "passed": 14,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 16
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 17
+      },
+      "peakForceN": 15.2
+    },
+    {
+      "gap": 64.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 42,
+        "passed": 12,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 17
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 18
+      },
+      "peakForceN": 13.13
+    },
+    {
+      "gap": 65,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 44,
+        "passed": 12,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 16
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 20
+      },
+      "peakForceN": 11.07
+    },
+    {
+      "gap": 65.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 46,
+        "passed": 12,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 14
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 22
+      },
+      "peakForceN": 9.01
+    },
+    {
+      "gap": 66,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 24,
+        "passed": 28,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 20
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 24
+      },
+      "peakForceN": 6.96
+    },
+    {
+      "gap": 66.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 24,
+        "passed": 26,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 22
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 24
+      },
+      "peakForceN": 4.9
+    },
+    {
+      "gap": 67,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 24,
+        "passed": 24,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 24
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 24
+      },
+      "peakForceN": 2.86
+    },
+    {
+      "gap": 67.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 12,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 24
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 12
+      },
+      "peakForceN": 1.02
+    },
+    {
+      "gap": 68,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 0,
+        "passed": 39,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 33
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0.71
+    },
+    {
+      "gap": 68.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 0,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 36
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0.48
+    },
+    {
+      "gap": 69,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 0,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 36
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0.33
+    },
+    {
+      "gap": 69.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 0,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 36
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0
+    },
+    {
+      "gap": 70,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 0,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 36
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0
+    },
+    {
+      "compression": 0.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 72,
+        "passed": 0,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 0
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 24,
+        "67.7": 24
+      },
+      "peakForceN": 2.04
+    },
+    {
+      "compression": 1,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 72,
+        "passed": 0,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 0
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 24,
+        "67.7": 24
+      },
+      "peakForceN": 4.08
+    },
+    {
+      "compression": 1.5,
+      "guideClearance": 2,
+      "outcomes": {
+        "fed": 72,
+        "passed": 0,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 0
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 24,
+        "67.7": 24
+      },
+      "peakForceN": 6.14
+    },
+    {
+      "gap": 62,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 50,
+        "passed": 0,
+        "rebound": 3,
+        "sideways": 0,
+        "stalled": 19
+      },
+      "byDiameter": {
+        "66": 16,
+        "63.5": 24,
+        "67.7": 10
+      },
+      "peakForceN": 23.44
+    },
+    {
+      "gap": 62.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 52,
+        "passed": 0,
+        "rebound": 2,
+        "sideways": 0,
+        "stalled": 18
+      },
+      "byDiameter": {
+        "66": 18,
+        "63.5": 24,
+        "67.7": 10
+      },
+      "peakForceN": 21.38
+    },
+    {
+      "gap": 63,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 56,
+        "passed": 0,
+        "rebound": 2,
+        "sideways": 0,
+        "stalled": 14
+      },
+      "byDiameter": {
+        "66": 18,
+        "63.5": 24,
+        "67.7": 14
+      },
+      "peakForceN": 19.32
+    },
+    {
+      "gap": 63.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 36,
+        "passed": 16,
+        "rebound": 2,
+        "sideways": 0,
+        "stalled": 18
+      },
+      "byDiameter": {
+        "66": 22,
+        "63.5": 0,
+        "67.7": 14
+      },
+      "peakForceN": 17.26
+    },
+    {
+      "gap": 64,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 41,
+        "passed": 12,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 18
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 17
+      },
+      "peakForceN": 15.2
+    },
+    {
+      "gap": 64.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 42,
+        "passed": 12,
+        "rebound": 1,
+        "sideways": 0,
+        "stalled": 17
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 18
+      },
+      "peakForceN": 13.13
+    },
+    {
+      "gap": 65,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 44,
+        "passed": 12,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 16
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 20
+      },
+      "peakForceN": 11.07
+    },
+    {
+      "gap": 65.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 46,
+        "passed": 12,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 14
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 0,
+        "67.7": 22
+      },
+      "peakForceN": 9.01
+    },
+    {
+      "gap": 66,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 24,
+        "passed": 28,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 20
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 24
+      },
+      "peakForceN": 6.95
+    },
+    {
+      "gap": 66.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 24,
+        "passed": 24,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 24
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 24
+      },
+      "peakForceN": 4.9
+    },
+    {
+      "gap": 67,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 24,
+        "passed": 24,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 24
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 24
+      },
+      "peakForceN": 2.86
+    },
+    {
+      "gap": 67.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 12,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 24
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 12
+      },
+      "peakForceN": 0.83
+    },
+    {
+      "gap": 68,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 0,
+        "passed": 38,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 34
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0.37
+    },
+    {
+      "gap": 68.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 0,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 36
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0.15
+    },
+    {
+      "gap": 69,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 0,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 36
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0
+    },
+    {
+      "gap": 69.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 0,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 36
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0
+    },
+    {
+      "gap": 70,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 0,
+        "passed": 36,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 36
+      },
+      "byDiameter": {
+        "66": 0,
+        "63.5": 0,
+        "67.7": 0
+      },
+      "peakForceN": 0
+    },
+    {
+      "compression": 0.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 72,
+        "passed": 0,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 0
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 24,
+        "67.7": 24
+      },
+      "peakForceN": 2.04
+    },
+    {
+      "compression": 1,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 72,
+        "passed": 0,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 0
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 24,
+        "67.7": 24
+      },
+      "peakForceN": 4.08
+    },
+    {
+      "compression": 1.5,
+      "guideClearance": 1,
+      "outcomes": {
+        "fed": 72,
+        "passed": 0,
+        "rebound": 0,
+        "sideways": 0,
+        "stalled": 0
+      },
+      "byDiameter": {
+        "66": 24,
+        "63.5": 24,
+        "67.7": 24
+      },
+      "peakForceN": 6.13
+    }
+  ]
+}
