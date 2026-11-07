@@ -11,7 +11,7 @@ Digitaler Konstruktionsstand vom 07.11.2026. Die V1 setzt Nikitas Ballweg vom Un
 
 ## In Fusion öffnen und weiterentwickeln
 
-In einer neuen Konstruktion **Netz → Erstellen → Netz einfügen**, `Rover_V1.3mf` auswählen und die Einheit Millimeter kontrollieren. Z zeigt nach oben, X ist die Fahrtrichtung. Die 3MF enthält die Netzkörper in Ruhestellung, einschließlich Referenzball, Abdeckungen und Bauraumhüllen. Autodesk dokumentiert [Netz einfügen](https://help.autodesk.com/cloudhelp/ENU/Fusion-Mesh/files/MESH-INSERT-MESH.htm). In dieser Sitzung war der Mac-Zugriff beim V1-Export unterbrochen. Der Import wurde hier nicht in Fusion ausgeführt. Die vorhandene native V0-Referenz bleibt separat verfügbar.
+In einer neuen Konstruktion **Netz → Erstellen → Netz einfügen**, `Rover_V1.3mf` auswählen und die Einheit Millimeter kontrollieren. Z zeigt nach oben, X ist die Fahrtrichtung. Die 3MF enthält die Netzkörper in Ruhestellung, einschließlich Referenzball, Abdeckungen und Bauraumhüllen. Autodesk dokumentiert [Netz einfügen](https://help.autodesk.com/cloudhelp/ENU/Fusion-Mesh/files/MESH-INSERT-MESH.htm). Am 07.11.2026 wurde genau diese 3MF auf Nikitas Mac in Fusion importiert. Fusion zeigte 101 Netzkörper im Millimeter-Dokument. Das importierte Modell wurde lokal als `Rover_V1_Fusion.f3d` in Downloads exportiert.
 
 Mit Node.js lässt sich der Stand aus dem vollständigen Repo neu erzeugen. `node cad/RoverV1/generate.js` schreibt die Ergebnisse nach `cad/v1`. Ein anderer Zielordner kann als erstes Argument übergeben werden. Mit `ROVER_OBJ=1` wird zusätzlich OBJ samt Materialdatei geschrieben. Die Prüfrechnung verwendet dieselben Geometrieparameter wie der Export.
 

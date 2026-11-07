@@ -1,6 +1,6 @@
 # Autodesk Fusion anbinden und maßhaltig konstruieren
 
-> Der vollständige [V1-Digitalentwurf](ROVER_V1_CAD.md) liegt als maßhaltiges 3MF-Netzmodell vor. Diese Seite dokumentiert auch die separat geprüfte native V0-Referenz.
+> Der vollständige [V1-Digitalentwurf](ROVER_V1_CAD.md) liegt als maßhaltiges 3MF-Netzmodell vor. Der Import aller 101 Netzkörper in Fusion wurde auf dem Mac geprüft. Diese Seite dokumentiert auch die separat geprüfte native V0-Referenz.
 
 ## Auf dem Mac geprüft am 07.11.2026
 

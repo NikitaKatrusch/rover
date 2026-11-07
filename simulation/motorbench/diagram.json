@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "author": "Rover project",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "fwd",
+      "top": -54,
+      "left": -172,
+      "attrs": {
+        "label": "VOR",
+        "color": "green",
+        "key": "F"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "rev",
+      "top": 32,
+      "left": -172,
+      "attrs": {
+        "label": "ZURUECK",
+        "color": "blue",
+        "key": "R"
+      }
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "link",
+      "top": 120,
+      "left": -161,
+      "attrs": {
+        "label": "LINK"
+      }
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic",
+      "top": -5,
+      "left": 178,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "esp:25",
+      "fwd:1.l",
+      "green",
+      []
+    ],
+    [
+      "esp:26",
+      "rev:1.l",
+      "blue",
+      []
+    ],
+    [
+      "esp:27",
+      "link:2",
+      "orange",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "fwd:2.l",
+      "black",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "rev:2.l",
+      "black",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "link:1",
+      "black",
+      []
+    ],
+    [
+      "esp:18",
+      "logic:D0",
+      "green",
+      []
+    ],
+    [
+      "esp:19",
+      "logic:D1",
+      "blue",
+      []
+    ],
+    [
+      "esp:23",
+      "logic:D2",
+      "purple",
+      []
+    ],
+    [
+      "esp:27",
+      "logic:D3",
+      "orange",
+      []
+    ],
+    [
+      "esp:GND.2",
+      "logic:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ]
+  ]
+}
