@@ -1,0 +1,79 @@
+{
+  "ball": {
+    "diameterMm": [
+      63.5,
+      67.7
+    ],
+    "massG": [
+      56,
+      59.4
+    ],
+    "source": "https://www.padelfip.com/wp-content/uploads/2026/04/Game-Ball-Certification-Process.pdf"
+  },
+  "deck": {
+    "length": 235,
+    "width": 250,
+    "bottom": 83,
+    "thickness": 5
+  },
+  "intake": {
+    "mouth": 148,
+    "channel": 82,
+    "wall": 3,
+    "axleX": -73,
+    "driveLength": 80,
+    "driveDiameter": 37
+  },
+  "auger": {
+    "x": -208,
+    "y": -47,
+    "z": 6,
+    "pitch": 105,
+    "turns": 4,
+    "core": 10,
+    "flight": 70,
+    "thickness": 4,
+    "housing": 84,
+    "wall": 4,
+    "guideX": 23,
+    "guideY": 73
+  },
+  "hopper": {
+    "topX": -10,
+    "length": 210,
+    "width": 200,
+    "rim": 446,
+    "funnelTop": 339,
+    "throatX": 48,
+    "throat": 78,
+    "throatTop": 270,
+    "wall": 3
+  },
+  "gate": {
+    "lower": 180,
+    "upper": 252,
+    "thickness": 3,
+    "stroke": 84
+  },
+  "head": {
+    "pivot": [
+      48,
+      139
+    ],
+    "wheelX": 85,
+    "wheelZ": 139,
+    "wheelDiameter": 72,
+    "wheelWidth": 24,
+    "compressionGap": 61,
+    "tilt": [
+      -5,
+      23
+    ]
+  },
+  "axis": {
+    "x": "forward",
+    "y": "left",
+    "z": "up",
+    "units": "mm"
+  }
+}

@@ -1,5 +1,7 @@
 # Rover mit Schneckenförderer
 
+> Die vollständige Auslegung liegt jetzt als [Rover V1](ROVER_V1_CAD.md) vor. Zahlen und Rollenverteilung in diesem Entwurfsprotokoll dokumentieren den früheren V0-Stand.
+
 Stand 07.11.2026. Nikitas Konzept aus dem Chat „Chat zum Ballroboter“ und dem Screenshot des Tinkercad-Entwurfs „Neat Kasi“ ist die aktuelle Entwicklungsrichtung. Die frühere Doppelband-Variante bleibt in den historischen Unterlagen nachvollziehbar.
 
 ## Ballweg und Schnittstellen

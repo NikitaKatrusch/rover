@@ -1,5 +1,7 @@
 # Autodesk Fusion anbinden und maßhaltig konstruieren
 
+> Der vollständige [V1-Digitalentwurf](ROVER_V1_CAD.md) liegt als maßhaltiges 3MF-Netzmodell vor. Diese Seite dokumentiert auch die separat geprüfte native V0-Referenz.
+
 ## Auf dem Mac geprüft am 07.11.2026
 
 Autodesk Fusion ist installiert und läuft. In Fusion ist das lokale Python-Skript [RoverReferenz](../cad/RoverReferenz/) registriert. Codex hat es in Fusion ausgeführt, sechs B-Rep-Körper erzeugt sowie ihre Außenmaße und Platzierungen mit 0,05 mm Prüftoleranz gegen den Plan geprüft. Das Ergebnis wurde als F3D und [STEP](../cad/referenz/Rover_V0_Bauraum.step) exportiert. Die tatsächlichen Werte stehen im [Prüfbericht](../cad/referenz/pruefbericht.json). Die Toleranz prüft den Modellaufbau. Die Maßquelle entscheidet weiterhin über die physische Passung.

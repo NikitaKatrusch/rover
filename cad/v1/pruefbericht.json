@@ -1,0 +1,52 @@
+{
+  "revision": "v1-schneckenrover",
+  "nominalMillimeters": true,
+  "manufacturingRelease": false,
+  "parts": 101,
+  "closedOrientedParts": 101,
+  "triangles": 12760,
+  "boundsMm": [
+    [
+      -295.96,
+      145
+    ],
+    [
+      -152,
+      152
+    ],
+    [
+      0,
+      498
+    ]
+  ],
+  "clearanceMm": {
+    "ballMittelbahnZuFestteilenAbgetastet": 3.15,
+    "auslaufSpaltMitte": 2.67,
+    "maxBallBodenfreiheit": 15.3,
+    "maxBallKanalGesamt": 14.3,
+    "motorgehaeuseZuFuehrung": 1,
+    "schneckeKernZuMaxBall": 3.15,
+    "schneckeMantelZuMaxBall": 3.15,
+    "schneckeFuehrungZuWindung": 6.54,
+    "schneckeFuehrungZuMaxBall": 0.86,
+    "schneckeSpielZwischenWindungenMaxBall": 29.07,
+    "trichterAuslaufGesamt": 10.3,
+    "obereSperreUeberMaxBall": 1.3,
+    "obereSperreUnterKleinsterZweitballmitte": 23.25,
+    "rueckgezogenerSchieberFrei": 3,
+    "kopfZuDeckBeiNeigungAbgetastet": 11.91,
+    "kopfZuTrichterUnterkanteAbgetastet": 28.67,
+    "motorSeitlichZuFestemKanal": 2.2,
+    "schussradEindrueckungKlein": 2.5,
+    "schussradEindrueckungGross": 6.7
+  },
+  "closestFixedObjectOnIntakePath": "03_Schneckenwelle",
+  "minimumFeedDownSlopeDeg": 12.38,
+  "grossHopperLitersBelowInlet": 5,
+  "testScope": [
+    "Wasserdichte orientierte Einzelnetze",
+    "Geometrische Spielmaße für FIP-Grenzfälle",
+    "Schnecke und Kippwinkel numerisch abgetastet",
+    "Kein Kontakt-, Reibungs-, Traglast- oder Montageversuch"
+  ]
+}
