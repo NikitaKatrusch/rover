@@ -1,0 +1,20 @@
+{
+  "ball_diameter_mm": 66,
+  "ball_mass_g": 58,
+  "gap_mm": 65,
+  "guide_width_mm": 68,
+  "ball_roller_friction": 0.24,
+  "roller_mass_g": 65,
+  "initial_rpm": 600,
+  "feed_speed_m_s": 0.18,
+  "lateral_offset_mm": 0.7,
+  "proxy_motor": {
+    "catalog_voltage_v": 12,
+    "catalog_no_load_rpm": 15000,
+    "resistance_ohm": 0.6,
+    "inductance_h": 0.00035,
+    "assumed_no_load_current_a": 0.8,
+    "assumed_rotor_inertia_kg_m2": 0.000005,
+    "test_current_limit_a": 4
+  }
+}

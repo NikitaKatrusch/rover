@@ -60,6 +60,19 @@ Die Zusatzprüfung wiederholt sechs Toleranzfälle mit halbiertem Zeitschritt. D
 
 Für den ersten Prototyp Rollenspalt und Führung auf den gemessenen Ball einstellen. Bei Ø66 mm ergeben sich **65 mm Rollenspalt und 68 mm Führungsbreite**. Die Rechnung dient als Startpunkt für eine stromlose Probe mit tatsächlichen Rollen. Die unbekannten Material- und Profilwerte verhindern eine Betriebsfreigabe oder eine Aussage zur Schussweite.
 
+## Dynamischer Test in MuJoCo
+
+Das [MuJoCo-Modell](../cad/Schusskopf/schusskopf.xml) übernimmt die Abmessungen des Einlaufs aus dem CAD. Es enthält zwei rotierende Körper auf eigenen Drehgelenken, zwei native spannungsgesteuerte Gleichstrommotoren, Rollen- und Rotorträgheit sowie Ballkontakte mit Reibung. Die Wellen können durch Kontaktkräfte langsamer werden. Die Drehmarken an beiden Rollen rotieren mit den Körpern.
+
+- [Modell in MuJoCo Live öffnen](https://live.mujoco.org/?model=github:NikitaKatrusch/rover/main/cad/Schusskopf/schusskopf.xml).
+- Der Schlüsselzustand **Einzug** setzt beide Wellen auf entgegengesetzte 600 U/min, legt je eine modellierte Klemmenspannung von 0,48 V mit passendem Vorzeichen an und lässt den Ball langsam in den Spalt rollen. **Stillstand** setzt Drehzahlen und Ansteuerung auf null.
+- Die Sensoren erfassen die beiden Wellengeschwindigkeiten in rad/s, die Motormomente in N·m und die Ballgeschwindigkeit in m/s. Drehzahl in U/min ergibt sich aus rad/s × 60 ÷ 2π.
+- `python3 cad/Schusskopf/generate_mujoco.py` erzeugt die MJCF-Datei aus CAD-Abmessungen und [Versuchsparametern](../cad/Schusskopf/mujoco-setup.json). Die Modelldatei benötigt MuJoCo 3.17 mit dem nativen `dcmotor`-Aktuator.
+
+**Modellannahmen.** Die Spannung 12 V und die Angebotsdrehzahl 15.000 U/min stammen aus der Stückliste. Wicklungswiderstand, Induktivität, Leerlaufstrom, Rotorträgheit, Rollenmasse und Kontaktparameter sind Annahmen. Das Modell verwendet 66 mm Ball-Ø, 65 mm Spalt und 68 mm Führung. Es simuliert die Mechanik und den vereinfachten elektrischen Motor bei vorgegebener Klemmenspannung. Ein tatsächlicher PWM-Treiber, dessen Netzteilverhalten und die Materialkennlinie der konkreten Rolle sind separat zu erfassen. Die simulierten Ströme und Drehzahlen sind Versuchswerte.
+
+[MuJoCo Live und Modellimport](https://mujoco.readthedocs.io/en/stable/studio/web_viewers.html) · [DC-Motormodell](https://mujoco.readthedocs.io/en/stable/XMLreference.html#actuator-dcmotor)
+
 ## Inbetriebnahme in Stufen
 
 1. **Stromlose Passprobe.** Bei getrennter Energieversorgung den Ball durch Einlauf, Rollenspalt und Auslauf führen. Dabei Ball, Rad und Nabe am realen Aufbau vermessen und die Einstellbarkeit prüfen.
