@@ -19,7 +19,7 @@ def add(parent, tag, **attrs):
     return ET.SubElement(parent, tag, {key: fmt(value) for key, value in attrs.items()})
 
 
-def build(geometry, dimensions, setup):
+def build(geometry, dimensions, setup, flight=None):
     wheel = geometry["rollers"]
     feed = geometry["feed"]
     deck = geometry["deck"]
@@ -42,21 +42,27 @@ def build(geometry, dimensions, setup):
     constant = (supply - winding_resistance * i0) / no_load_omega
     bearing_damping = constant * i0 / no_load_omega
     start_omega = setup["initial_rpm"] * math.tau / 60
-    start_voltage = supply * start_omega / no_load_omega
-    initial_current = i0 * start_omega / no_load_omega
+    speed_ratio = setup["initial_rpm"] / motor["catalog_no_load_rpm"]
+    start_voltage = supply * speed_ratio
+    initial_current = i0 * speed_ratio
     ball_r = diameter / 2000
     feed_speed = setup["feed_speed_m_s"]
     ball_pos = (-0.047, setup["lateral_offset_mm"] / 1000, ball_r)
+    feed_direction = (1, 0, 0)
     if (not wheel["gapRange"][0] <= gap <= wheel["gapRange"][1]
             or abs(ball_pos[1]) * 2000 > guide_width - diameter
             or start_voltage > supply or constant <= 0 or winding_resistance <= 0):
         raise ValueError("Auslegung außerhalb der vorgesehenen Abmessungen oder Motordaten.")
 
     model = ET.Element("mujoco", {"model": "Rover Schusskopf | zwei DC-Motoren"})
+    if flight:
+        model.set("model", "Rover Schusskopf | Reichweitentest")
     model.append(ET.Comment("CAD dimensions in SI units. Motor electrical data and inertias are test assumptions."))
     add(model, "compiler", angle="radian", autolimits="true")
-    add(model, "option", timestep=0.0005, integrator="implicitfast", cone="elliptic", gravity="0 0 -9.81")
-    add(model, "statistic", center="-0.01 0 0.04", extent=0.24)
+    add(model, "option", timestep=flight["timestep_s"] if flight else 0.0005,
+        integrator="implicitfast", cone="elliptic", gravity="0 0 -9.81",
+        **({"density": flight["air_density_kg_m3"]} if flight else {}))
+    add(model, "statistic", center=(0, 0, flight["ball_center_height_m"]) if flight else "-0.01 0 0.04", extent=0.24)
     visual = add(model, "visual")
     add(visual, "global", azimuth=138, elevation=-27)
     add(visual, "headlight", ambient="0.4 0.4 0.4", diffuse="0.7 0.7 0.7")
@@ -66,34 +72,54 @@ def build(geometry, dimensions, setup):
     add(world, "light", pos="-0.35 -0.3 0.55", dir="0.4 0.3 -1")
     add(world, "camera", name="Schusskopf", pos="-0.29 -0.42 0.29",
         xyaxes="0.823 -0.568 0 0.278 0.403 0.872")
-    add(world, "geom", name="Umgebung", type="plane", pos=(0, 0, deck_top - 0.007),
-        size="1 1 0.05", rgba="0.16 0.19 0.22 1")
-    add(world, "geom", name="Grundplatte", type="box",
+    add(world, "geom", name="Umgebung", type="plane", pos=(0, 0, 0 if flight else deck_top - 0.007),
+        size="0 0 0.25" if flight else "1 1 0.05", rgba="0.16 0.19 0.22 1")
+    mount = world
+    exit_x = feed["exitX"]
+    walls = [("Einlauf", feed["entryX"], -feed["sideWallEndX"]),
+             ("Auslauf", feed["sideWallEndX"], exit_x)]
+    if flight:
+        angle = math.radians(flight["inclination_deg"])
+        c, s = math.cos(angle), math.sin(angle)
+        origin_z = flight["ball_center_height_m"] - ball_r * c
+        mount = add(world, "frame", pos=(0, 0, origin_z), euler=(0, -angle, 0))
+        exit_x = 0
+        walls = walls[:1]
+        x, y, z = ball_pos
+        ball_pos = (x*c - z*s, y, origin_z + x*s + z*c)
+        feed_direction = (c, 0, s)
+        add(world, "camera", name="Flugbahn", pos="8 -24 10", xyaxes="1 0 0 0 0.3 0.9539392")
+        for distance in (5, 8, 10, 15, 16, 18, 20):
+            add(world, "site", name=f"Marke_{distance}_m", type="box", pos=(distance, 0, 0.002),
+                size=(0.04, 1.2, 0.002), rgba="0.96 0.77 0.19 0.9" if distance == 16 else "0.54 0.67 0.8 0.8")
+        add(world, "site", name="Netz_bei_8_m", type="box", pos="8 0 0.44",
+            size="0.01 5 0.44", rgba="0.67 0.72 0.78 0.2")
+    add(mount, "geom", name="Grundplatte", type="box",
         pos=((deck["rearX"] + deck["length"] / 2) / 1000, 0, deck_top - deck["thickness"] / 2000),
         size=(deck["length"] / 2000, deck["width"] / 2000, deck["thickness"] / 2000),
         rgba="0.25 0.31 0.39 1")
-    add(world, "geom", name="Ballkanal_Boden", type="box",
-        pos=((feed["entryX"] + feed["exitX"]) / 2000, 0, deck_top / 2),
-        size=((feed["exitX"] - feed["entryX"]) / 2000, (guide_width / 2 + feed["wall"]) / 1000, -deck_top / 2),
+    add(mount, "geom", name="Ballkanal_Boden", type="box",
+        pos=((feed["entryX"] + exit_x) / 2000, 0, deck_top / 2),
+        size=((exit_x - feed["entryX"]) / 2000, (guide_width / 2 + feed["wall"]) / 1000, -deck_top / 2),
         rgba="0.12 0.44 0.42 1")
     for sign, side, color in [(1, "links", "0.22 0.53 0.89 1"), (-1, "rechts", "0.92 0.47 0.19 1")]:
-        for name, x0, x1 in [("Einlauf", feed["entryX"], -feed["sideWallEndX"]),
-                             ("Auslauf", feed["sideWallEndX"], feed["exitX"])]:
-            add(world, "geom", name=f"{name}_{side}", type="box",
+        for name, x0, x1 in walls:
+            add(mount, "geom", name=f"{name}_{side}", type="box",
                 pos=((x0+x1)/2000, sign*(guide_width+feed["wall"])/2000, feed["wallHeight"]/2000),
                 size=((x1-x0)/2000, feed["wall"]/2000, feed["wallHeight"]/2000),
                 rgba="0.18 0.65 0.57 1")
         hub_z = center_z + half_width + 0.002
         housing_half = dimensions["motor_775_body_length"] / 2000
-        add(world, "geom", name=f"Motorgehaeuse_{side}_Bauraum", type="cylinder",
+        add(mount, "geom", name=f"Motorgehaeuse_{side}_Bauraum", type="cylinder",
             pos=(0, sign*axis_distance, hub_z + 0.002 + housing_half),
             size=(dimensions["motor_775_body_diameter"] / 2000, housing_half),
             contype=0, conaffinity=0, rgba="0.45 0.49 0.53 1")
-        roller = add(world, "body", name=f"Rolle_{side}", pos=(0, sign*axis_distance, center_z))
+        roller = add(mount, "body", name=f"Rolle_{side}", pos=(0, sign*axis_distance, center_z))
         add(roller, "inertial", pos="0 0 0", mass=mass, diaginertia=(side_inertia, side_inertia, spin_inertia))
         add(roller, "joint", name=f"Welle_{side}", type="hinge", axis="0 0 1",
             damping=bearing_damping, armature=motor["assumed_rotor_inertia_kg_m2"])
-        add(roller, "geom", name=f"Laufflaeche_{side}", type="cylinder", size=(radius, half_width), rgba=color)
+        add(roller, "geom", name=f"Laufflaeche_{side}", type="cylinder", size=(radius, half_width), rgba=color,
+            **({"fluidshape": "ellipsoid", "fluidcoef": "0 0 0 0 0"} if flight else {}))
         add(roller, "geom", name=f"Nabenraum_{side}", type="cylinder", pos=(0, 0, half_width+0.002),
             size="0.008 0.002", contype=0, conaffinity=0, rgba="0.20 0.23 0.26 1")
         add(roller, "site", name=f"Drehmarke_{side}", type="box", pos=(radius-0.005, 0, half_width+0.001),
@@ -103,13 +129,15 @@ def build(geometry, dimensions, setup):
     add(ball, "freejoint", name="Ball_frei")
     ball_mass = setup["ball_mass_g"] / 1000
     add(ball, "inertial", pos="0 0 0", mass=ball_mass, diaginertia=(2*ball_mass*ball_r**2/3,)*3)
-    add(ball, "geom", name="Ballkontakt", type="sphere", size=ball_r, rgba="0.89 0.87 0.19 1")
+    ball_air = {"fluidshape": "ellipsoid", "fluidcoef": (flight["drag_coefficient"]/2, 0, 0, 0, 0)} if flight else {}
+    add(ball, "geom", name="Ballkontakt", type="sphere", size=ball_r, rgba="0.89 0.87 0.19 1", **ball_air)
     add(ball, "site", name="Ball_Drehmarke", pos=(0, -0.004, ball_r-0.0008), size="0.003", rgba="0.29 0.30 0.08 1")
     pairs = add(model, "contact")
     for side in ("links", "rechts"):
         mu = setup["ball_roller_friction"]
         add(pairs, "pair", geom1="Ballkontakt", geom2=f"Laufflaeche_{side}", condim=3,
-            friction=(mu, mu, 0.003, 0.0001, 0.0001), solref="0.012 0.8", solimp="0.15 0.92 0.003 0.5 2")
+            friction=(mu, mu, 0.003, 0.0001, 0.0001),
+            solref=(flight["contact_time_s"], 0.8) if flight else "0.012 0.8", solimp="0.15 0.92 0.003 0.5 2")
     actuators = add(model, "actuator")
     for side in ("links", "rechts"):
         add(actuators, "dcmotor", name=f"DC_775_{side}", joint=f"Welle_{side}", input="voltage",
@@ -121,19 +149,27 @@ def build(geometry, dimensions, setup):
         add(sensors, "actuatorfrc", name=f"Motor_{side}_Nm", actuator=f"DC_775_{side}")
     add(sensors, "framelinvel", name="Ball_m_s", objtype="body", objname="Padelball")
     keyframes = add(model, "keyframe")
-    add(keyframes, "key", name="Einzug", qpos=(0, 0, *ball_pos, 1, 0, 0, 0),
-        qvel=(start_omega, -start_omega, feed_speed, 0, 0, 0, feed_speed/ball_r, 0),
+    add(keyframes, "key", name="Reichweitentest" if flight else "Einzug", qpos=(0, 0, *ball_pos, 1, 0, 0, 0),
+        qvel=(start_omega, -start_omega, *(feed_speed * value for value in feed_direction), 0, feed_speed/ball_r, 0),
         ctrl=(start_voltage, -start_voltage), act=(initial_current, -initial_current))
     add(keyframes, "key", name="Stillstand")
     return model
 
 
-if __name__ == "__main__":
-    cli = argparse.ArgumentParser(description=__doc__)
-    cli.add_argument("--output", type=Path, default=HERE / "schusskopf.xml")
-    args = cli.parse_args()
+def load_inputs():
     read = lambda path: json.loads(path.read_text(encoding="utf-8"))
     sizes = {entry["parameter"]: entry["reported_mm"] for entry in read(HERE.parents[1] / "hardware" / "bauteilmasse.json")["dimensions"]}
-    model = build(read(HERE / "auslegung.json"), sizes, read(HERE / "mujoco-setup.json"))
+    return read(HERE / "auslegung.json"), sizes, read(HERE / "mujoco-setup.json")
+
+
+if __name__ == "__main__":
+    cli = argparse.ArgumentParser(description=__doc__)
+    cli.add_argument("--output", type=Path)
+    cli.add_argument("--flight", type=Path, help="JSON configuration for the inclined range test.")
+    args = cli.parse_args()
+    geometry, sizes, setup = load_inputs()
+    config = json.loads(args.flight.read_text(encoding="utf-8")) if args.flight else {}
+    model = build(geometry, sizes, setup | config.get("setup", {}), config.get("flight"))
     ET.indent(model, space="  ")
-    args.output.write_text(ET.tostring(model, encoding="unicode") + "\n", encoding="utf-8")
+    output = args.output or HERE / ("schusskopf-reichweite.xml" if args.flight else "schusskopf.xml")
+    output.write_text(ET.tostring(model, encoding="unicode") + "\n", encoding="utf-8")

@@ -1,0 +1,17 @@
+{
+  "setup": {
+    "initial_rpm": 8000,
+    "gap_mm": 62,
+    "ball_roller_friction": 0.6,
+    "feed_speed_m_s": 1.0,
+    "lateral_offset_mm": 0
+  },
+  "flight": {
+    "inclination_deg": 45,
+    "ball_center_height_m": 0.5,
+    "air_density_kg_m3": 1.2,
+    "drag_coefficient": 0.55,
+    "contact_time_s": 0.0015,
+    "timestep_s": 0.0001
+  }
+}

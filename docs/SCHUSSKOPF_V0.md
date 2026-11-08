@@ -4,6 +4,8 @@ Aktuelle Baustufe seit 07.11.2026. Der Schusskopf wird als eigenständiger, fest
 
 [3MF-Passmodell](../cad/Schusskopf/Schusskopf_V0.3mf) · [Auslegung](../cad/Schusskopf/auslegung.json) · [Prüfbericht](../cad/Schusskopf/pruefbericht.json)
 
+Für den 20-m-Court gibt es einen [Neigeprüfstand mit druckbaren Achsständern, Lob-Simulation und Anschlussplan](../cad/Schusskopf/Neigepruefstand/README.md).
+
 ## Teile und belastbare Angaben
 
 | Teil | Belegt | Für den Schusskopf offen |
