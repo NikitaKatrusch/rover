@@ -14,6 +14,11 @@ moving_t = 10;
 fixed_t = 12;
 roller_center = 68.5;
 guide_width = 68;
+guide_entry_x = -121;
+guide_floor_t = 8.5;
+reference_ball_d = 66;
+pusher_front_stop = -39;
+pusher_stroke = 25;
 roller_z = 50;
 clearance_m5 = 5.6;
 
@@ -44,14 +49,14 @@ module deck() {
 module guide() {
     inner_width = guide_width;
     wall = 3;
-    floor_t = 8.5;
+    floor_t = guide_floor_t;
     difference() {
         union() {
-            translate([-121, -inner_width/2-wall, 0])
-                cube([121, inner_width+2*wall, floor_t]);
+            translate([guide_entry_x, -inner_width/2-wall, 0])
+                cube([-guide_entry_x, inner_width+2*wall, floor_t]);
             for (side = [-1, 1]) {
-                translate([-121, side*inner_width/2+(side-1)*wall/2, floor_t-0.1])
-                    cube([90, wall, 23.1]);
+                translate([guide_entry_x, side*inner_width/2+(side-1)*wall/2, floor_t-0.1])
+                    cube([-guide_entry_x-31, wall, 23.1]);
                 for (x = [-100, -54])
                     hull() {
                         through_z(x, side*33, 0, 12, floor_t);
@@ -61,6 +66,24 @@ module guide() {
         }
         for (side = [-1, 1], x = [-100, -54])
             through_z(x, side*44, -1, clearance_m5, floor_t+2);
+    }
+}
+
+module ballschieber() {
+    shoe_width = guide_width - 1.6;
+    stop_width = guide_width + 8;
+    stop_x = guide_entry_x - pusher_front_stop;
+    difference() {
+        union() {
+            // Schuh und Schubstange laufen auf der vorhandenen Kanalsohle.
+            translate([-41, -shoe_width/2, 0]) cube([34, shoe_width, 5]);
+            translate([stop_x-4, -6, 0]) cube([-stop_x-2, 12, 12]);
+            translate([-12, -12, 0]) cube([14.6, 24, 42]);
+            // Der Kragen ist breiter als die Führung und stoppt am Einlauf.
+            translate([stop_x-5, -stop_width/2, 0]) cube([5, stop_width, 12]);
+            translate([stop_x-5, -12, 0]) cube([8, 24, 43]);
+        }
+        through_z(reference_ball_d/2, 0, -1, reference_ball_d, 44);
     }
 }
 
@@ -136,12 +159,17 @@ module assembly() {
             }
             color("#444c57") through_z(0, 0, 25, 8, 33);
         }
-        color("#e4d03b") translate([-52, 0, deck_t+8.5+33]) sphere(d=66);
+        ball_r = reference_ball_d/2;
+        pusher_x = pusher_front_stop-pusher_stroke;
+        color("#ab603e") translate([pusher_x, 0, deck_t+guide_floor_t]) ballschieber();
+        color("#e4d03b")
+            translate([pusher_x+ball_r, 0, deck_t+guide_floor_t+ball_r]) sphere(d=reference_ball_d);
     }
 }
 
 if (part == "deck") deck();
 else if (part == "guide") guide();
+else if (part == "ballschieber") ballschieber();
 else if (part == "roller_stand") roller_stand();
 else if (part == "trunnion_left") translate([0, 0, moving_t]) rotate([-90, 0, 0]) trunnion();
 else if (part == "trunnion_right") mirror([0, 1, 0]) translate([0, 0, moving_t]) rotate([-90, 0, 0]) trunnion();

@@ -8,6 +8,7 @@ Stand 08.11.2026. Dieser Aufbau ist für die **stromlose Pass-, Winkel- und Einz
 |---|---:|---|
 | `deck.stl` | 1 | Bewegliche Platte 195 × 220 × 8 mm |
 | `guide.stl` | 1 | Ballführung 68 mm innen für den Referenzball Ø66 mm |
+| `ballschieber.stl` | 1 | Geführter Handschieber mit Anschlag für die stromlose Zuführprobe |
 | `roller_stand.stl` | 2 | Abstützung je einer stillstehenden Ø8-mm-Achse |
 | `trunnion_left.stl`, `trunnion_right.stl` | je 1 | Schwenklager und Rastbolzen an der beweglichen Platte |
 | `cheek_left.stl`, `cheek_right.stl` | je 1 | Feste Wangen mit den Rastungen 0°, 20°, 35°, 45°, 55° und 65° |
@@ -18,9 +19,19 @@ Links und rechts gelten vom Einlauf in Schussrichtung. Die Teile sind in Druckla
 2. Führung, beide beweglichen Schwenkplatten und beide Achsständer mit M5-Schrauben auf der beweglichen Platte befestigen. Bei 8 mm Grundstärke passen M5×25 als Ausgangsmaß für diese Verbindungen. Die Ø5,6-mm-Löcher und die Löcher für die Achsen zuerst am Testdruck prüfen.
 3. Je Seite einen M5-Drehbolzen mit Scheiben und selbstsichernder Mutter einsetzen. Je Seite einen separaten Rastbolzen einsetzen. Bei 10 mm beweglicher Wange, 1 mm Spalt und 12 mm fester Wange ist M5×35 ein Ausgangsmaß für diese vier Bolzen. Die Befestigung der festen Wangen richtet sich nach der Dicke der Grundplatte.
 4. Rollen auf zwei Ø8-mm-Achsen mit glattem Sitz an den Lagerinnenringen montieren. Die Ständer haben unten Platz für eine M8-Sechskantmutter. Die Achslänge am echten Rad festlegen. Einstellbereich des nominellen Rollenspalts 62–70 mm. Zum Anfangen einen Spalt größer als den gemessenen Ball einstellen und den Spalt schrittweise enger stellen.
-5. Zuerst bei 0° beide Rollen von Hand in Einzugsrichtung drehen. Dann auf beiden Seiten bei 45° einrasten. Der Ball braucht bei steiler Lage eine definierte Zuführung bis an den Spalt. Für die stromlose Probe einen Schieber verwenden. Eine spätere Einzelballzufuhr und die Ballführung bewegen sich mit der Platte.
+5. Zuerst bei 0° beide Rollen von Hand in Einzugsrichtung drehen. Dann auf beiden Seiten bei 45° einrasten und den geführten Ballvorschub prüfen.
 
 Die Schwenkachse verläuft quer zur Schussrichtung auf Höhe der Ballmitte. Bei 65° bleiben im CAD rund 20,6 mm zwischen Plattenunterkante und Grundebene und mindestens 10,6 mm zur 10-mm-Fußebene. Überstehende Schrauben und Kabel beim Aufbau prüfen. Später kann ein Antrieb an den Schwenkrahmen angreifen. Seine Dimensionierung braucht die Masse und Schwerpunktlage von Motoren, Haltern und Haube.
+
+## Ballvorschub bei geneigter Plattform
+
+Bei geneigtem Kanal drückt der Handschieber den Ball von hinten bis an die Rollen. Der Schieber läuft in der vorhandenen Führung. Sein breiter Kragen begrenzt den Weg am hinteren Ende des Kanals.
+
+1. Den Schieber vom Einlauf her einsetzen und bis etwa 25 mm Abstand zwischen Kragen und Kanalkante zurückziehen. Den Ball direkt vor dem Schieber von oben in die Führung legen.
+2. Den Schieber von hinten langsam vorschieben, bis der Ball die Rollen berührt. Im Referenzaufbau mit Ø66 mm Ball und 65 mm Spalt berührt der mittige Ball die Rollen ungefähr 8 mm vor deren Achse. Der Schieber reicht mit dem Ø66-mm-Ball bis ungefähr 6 mm vor die Achse.
+3. Die Rollen bei getrennter Stromversorgung von Hand drehen und beobachten, ob sie den Ball übernehmen. Bei Widerstand die Spaltweite und Ballhöhe prüfen. Den Ball nicht mit Kraft einklemmen.
+
+Der Zielaufbau nutzt einen einzelnen Ball aus dem Trichter. Eine Klappe lässt ihn **von oben** in die Aufnahmeposition fallen. Ein kurzer motorisierter Vorschub bringt ihn anschließend bergauf zu den Rollen. Der Vorschub sitzt zusammen mit der Führung auf dem kippenden Kopf. Die Übergabe vom späteren festen Trichter an die geneigte Plattform muss bei den vorgesehenen Winkeln separat ausgelegt werden.
 
 ## Flugbahn für den 20-m-Court
 
@@ -57,7 +68,7 @@ Für den Motoreinbau am 775 zusätzlich Wellen-Ø, nutzbare Wellenlänge, Zentri
 ## Dateien erzeugen
 
 ```sh
-for part in deck guide roller_stand trunnion_left trunnion_right cheek_left cheek_right; do
+for part in deck guide ballschieber roller_stand trunnion_left trunnion_right cheek_left cheek_right; do
   openscad -D "part=\"$part\"" -o "$part.stl" neigepruefstand.scad
 done
 ```
