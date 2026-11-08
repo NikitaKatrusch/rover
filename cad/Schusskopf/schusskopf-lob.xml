@@ -6,6 +6,7 @@
   <visual>
     <global azimuth="138" elevation="-27" />
     <headlight ambient="0.4 0.4 0.4" diffuse="0.7 0.7 0.7" />
+    <map zfar="200" />
   </visual>
   <default>
     <geom condim="3" friction="0.10 0.003 0.0001" rgba="0.48 0.54 0.62 1" />
@@ -18,6 +19,7 @@
       <geom name="Grundplatte" type="box" pos="-0.015 0 -0.01315" size="0.12 0.116 0.003" rgba="0.25 0.31 0.39 1" />
       <geom name="Ballkanal_Boden" type="box" pos="-0.063 0 -0.005075" size="0.063 0.037 0.005075" rgba="0.12 0.44 0.42 1" />
       <geom name="Einlauf_links" type="box" pos="-0.0785 0.0355 0.0145" size="0.0475 0.0015 0.0145" rgba="0.18 0.65 0.57 1" />
+      <geom name="Achsstaender_links_Bauraum" type="box" pos="0 0.067 0.00585" size="0.014 0.014 0.016" contype="0" conaffinity="0" rgba="0.37 0.44 0.51 1" />
       <geom name="Motorgehaeuse_links_Bauraum" type="cylinder" pos="0 0.067 0.08535" size="0.0223 0.0355" contype="0" conaffinity="0" rgba="0.45 0.49 0.53 1" />
       <body name="Rolle_links" pos="0 0.067 0.03385">
         <inertial pos="0 0 0" mass="0.065" diaginertia="2.418e-05 2.418e-05 4.212e-05" />
@@ -27,6 +29,7 @@
         <site name="Drehmarke_links" type="box" pos="0.031 0 0.013" size="0.003 0.002 0.001" rgba="1 1 1 1" />
       </body>
       <geom name="Einlauf_rechts" type="box" pos="-0.0785 -0.0355 0.0145" size="0.0475 0.0015 0.0145" rgba="0.18 0.65 0.57 1" />
+      <geom name="Achsstaender_rechts_Bauraum" type="box" pos="0 -0.067 0.00585" size="0.014 0.014 0.016" contype="0" conaffinity="0" rgba="0.37 0.44 0.51 1" />
       <geom name="Motorgehaeuse_rechts_Bauraum" type="cylinder" pos="0 -0.067 0.08535" size="0.0223 0.0355" contype="0" conaffinity="0" rgba="0.45 0.49 0.53 1" />
       <body name="Rolle_rechts" pos="0 -0.067 0.03385">
         <inertial pos="0 0 0" mass="0.065" diaginertia="2.418e-05 2.418e-05 4.212e-05" />

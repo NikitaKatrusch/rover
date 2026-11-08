@@ -66,6 +66,8 @@ def build(geometry, dimensions, setup, flight=None):
     visual = add(model, "visual")
     add(visual, "global", azimuth=138, elevation=-27)
     add(visual, "headlight", ambient="0.4 0.4 0.4", diffuse="0.7 0.7 0.7")
+    if flight:
+        add(visual, "map", zfar=200)
     default = add(model, "default")
     add(default, "geom", condim=3, friction="0.10 0.003 0.0001", rgba="0.48 0.54 0.62 1")
     world = add(model, "worldbody")
@@ -110,6 +112,12 @@ def build(geometry, dimensions, setup, flight=None):
                 rgba="0.18 0.65 0.57 1")
         hub_z = center_z + half_width + 0.002
         housing_half = dimensions["motor_775_body_length"] / 2000
+        if flight:
+            stand_half_height = (center_z - half_width - deck_top) / 2
+            add(mount, "geom", name=f"Achsstaender_{side}_Bauraum", type="box",
+                pos=(0, sign*axis_distance, deck_top+stand_half_height),
+                size=(0.014, 0.014, stand_half_height), contype=0, conaffinity=0,
+                rgba="0.37 0.44 0.51 1")
         add(mount, "geom", name=f"Motorgehaeuse_{side}_Bauraum", type="cylinder",
             pos=(0, sign*axis_distance, hub_z + 0.002 + housing_half),
             size=(dimensions["motor_775_body_diameter"] / 2000, housing_half),
