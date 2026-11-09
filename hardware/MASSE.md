@@ -2,6 +2,10 @@
 
 Stand 07.11.2026 mit Bestellabgleich. Alle Längen in mm, falls nicht anders angegeben. **Kein Bauteil wurde bei dieser Zusammenführung neu vermessen.** Eine Zahl mit zwei Nachkommastellen ist nicht automatisch eine genaue Istmessung.
 
+## Nachmessung für den Schusskopf am 09.11.2026
+
+Nikita hat mit dem Digitalmessschieber **Ø5,01 mm an der 775-Welle** und **Ø19,43 mm im Radkern nach Ausbau des Kugellagers** gemessen. Die axiale Lage und Länge der gemessenen Radkernstufe sowie die freie Wellenlänge stehen aus. Der [Passadapter](../cad/Schusskopf/Passadapter/README.md) dokumentiert die geprüften Druckvarianten für die stromlose Passprobe.
+
 ## Bauteile
 
 | Bauteil / Merkmal | Überlieferter Wert | Art des Belegs | Vor passgenauer Konstruktion offen |
