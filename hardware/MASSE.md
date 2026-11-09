@@ -4,7 +4,7 @@ Stand 07.11.2026 mit Bestellabgleich. Alle Längen in mm, falls nicht anders ang
 
 ## Nachmessung für den Schusskopf am 09.11.2026
 
-Nikita hat mit dem Digitalmessschieber **Ø5,01 mm an der 775-Welle** und **Ø19,43 mm im Radkern nach Ausbau des Kugellagers** gemessen. Die axiale Lage und Länge der gemessenen Radkernstufe sowie die freie Wellenlänge stehen aus. Der [Passadapter](../cad/Schusskopf/Passadapter/README.md) dokumentiert die geprüften Druckvarianten für die stromlose Passprobe.
+Nikita hat mit dem Digitalmessschieber **Ø5,01 mm an der 775-Welle** und **Ø19,43 mm im Radkern nach Ausbau des Kugellagers** gemessen. Nikita hat zudem **23,81 mm** als axiales Durchgangsmaß durch das Rad und **ca. 17 mm** am Motor angegeben. Die 17 mm wurden als ungefähre freie Wellenlänge verstanden. Die axiale Lage und Länge der gemessenen Radkernstufe und die nutzbare Einspannlänge stehen aus. Der [Passadapter](../cad/Schusskopf/Passadapter/README.md) dokumentiert die geprüften Druckvarianten für die stromlose Passprobe.
 
 ## Bauteile
 

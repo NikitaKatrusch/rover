@@ -21,3 +21,19 @@ STL-Export aus diesem Verzeichnis am Beispiel der mittleren Variante.
 ```sh
 openscad -o passadapter_1925.stl -D 'rad_durchmesser=19.25' -D 'beschriftung="19.25"' passadapter.scad
 ```
+
+## Materialarme Passprobe
+
+Der [Schnelltest](passadapter_schnelltest.scad) hat zwei konzentrische Wände mit 1,4 mm Nennwandstärke, eine Einstecktiefe von 12 mm und eine durchgehende Bohrung von Ø5,25 mm. Der Anschlag misst Ø26 × 1,6 mm. Der offene Raum zwischen den Wänden spart Material. Die Größen sind im P1S-Projekt über die Plattennamen gekennzeichnet.
+
+| Platte | Radzapfen | Reine Druckzeit | Gesamtzeit | Material |
+|---|---:|---:|---:|---:|
+| 1 | Ø19,25 mm | 5:11 min | 11:24 min | 2,73 g |
+| 2 | Ø19,15 mm | 5:12 min | 11:26 min | 2,73 g |
+| 3 | Ø19,35 mm | 5:14 min | 11:28 min | 2,74 g |
+
+Bambu Studio 2.6.0.51 am 09.11.2026, P1S mit 0,4-mm-Düse, PLA, 0,28-mm-Schichten und 0 % Infill. Alle drei Netze sind geschlossen und ließen sich einzeln slicen. Die Zeitwerte sind Schätzungen aus dem Slicer. Zuerst Platte 1 drucken und die Passung von Hand am stromlosen Aufbau prüfen. Die Größen auf den anderen Platten bei Bedarf einzeln verwenden. Die reale Passprobe steht aus.
+
+```sh
+openscad -o schnelltest_1925.stl -D 'rad_durchmesser=19.25' passadapter_schnelltest.scad
+```
