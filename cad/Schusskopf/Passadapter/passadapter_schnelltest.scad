@@ -5,6 +5,7 @@ einstecktiefe = 12;
 anschlag_durchmesser = 26;
 anschlag_hoehe = 1.6;
 ringwand = 1.4;
+markierungen = 2;
 fasen_hoehe = 0.55;
 $fn = 96;
 
@@ -35,4 +36,11 @@ difference() {
         cylinder(d1=wellenbohrung+2*fasen_hoehe, d2=wellenbohrung, h=fasen_hoehe+0.01);
     translate([0, 0, gesamt_hoehe-fasen_hoehe])
         cylinder(d1=wellenbohrung, d2=wellenbohrung+2*fasen_hoehe, h=fasen_hoehe+0.01);
+
+    // Kerben am Anschlag kennzeichnen die drei Durchmesser.
+    if (markierungen > 0)
+        for (index = [0 : markierungen-1])
+            rotate([0, 0, 12*(index-(markierungen-1)/2)])
+                translate([0, anschlag_durchmesser/2, -0.1])
+                    cylinder(r=0.85, h=anschlag_hoehe+0.2, $fn=24);
 }

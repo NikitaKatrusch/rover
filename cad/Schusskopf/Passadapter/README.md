@@ -24,16 +24,16 @@ openscad -o passadapter_1925.stl -D 'rad_durchmesser=19.25' -D 'beschriftung="19
 
 ## Materialarme Passprobe
 
-Der [Schnelltest](passadapter_schnelltest.scad) hat zwei konzentrische Wände mit 1,4 mm Nennwandstärke, eine Einstecktiefe von 12 mm und eine durchgehende Bohrung von Ø5,25 mm. Der Anschlag misst Ø26 × 1,6 mm. Der offene Raum zwischen den Wänden spart Material. Die Größen sind im P1S-Projekt über die Plattennamen gekennzeichnet.
+Der [Schnelltest](passadapter_schnelltest.scad) hat zwei konzentrische Wände mit 1,4 mm Nennwandstärke, eine Einstecktiefe von 12 mm und eine durchgehende Bohrung von Ø5,25 mm. Der Anschlag misst Ø26 × 1,6 mm. Der offene Raum zwischen den Wänden spart Material.
 
-| Platte | Radzapfen | Reine Druckzeit | Gesamtzeit | Material |
-|---|---:|---:|---:|---:|
-| 1 | Ø19,25 mm | 5:11 min | 11:24 min | 2,73 g |
-| 2 | Ø19,15 mm | 5:12 min | 11:26 min | 2,73 g |
-| 3 | Ø19,35 mm | 5:14 min | 11:28 min | 2,74 g |
+| Position auf Platte 1 | Kerben am Anschlag | Radzapfen |
+|---|---:|---:|
+| Links | 1 | Ø19,15 mm |
+| Mitte | 2 | Ø19,25 mm |
+| Rechts | 3 | Ø19,35 mm |
 
-Bambu Studio 2.6.0.51 am 09.11.2026, P1S mit 0,4-mm-Düse, PLA, 0,28-mm-Schichten und 0 % Infill. Alle drei Netze sind geschlossen und ließen sich einzeln slicen. Die Zeitwerte sind Schätzungen aus dem Slicer. Zuerst Platte 1 drucken und die Passung von Hand am stromlosen Aufbau prüfen. Die Größen auf den anderen Platten bei Bedarf einzeln verwenden. Die reale Passprobe steht aus.
+Alle drei Varianten drucken gemeinsam, damit der Drucker nur einmal die Startsequenz durchläuft. Bambu Studio 2.6.0.51 hat am 09.11.2026 für den P1S mit 0,4-mm-Düse, PLA, 0,28-mm-Schichten und 0 % Infill **11:29 min reine Druckzeit**, **17:42 min Gesamtzeit** und **7,99 g** geschätzt. Alle Netze sind geschlossen und wurden gemeinsam geslict. Zuerst die mittlere Größe am stromlosen Aufbau von Hand prüfen. Die reale Passprobe steht aus.
 
 ```sh
-openscad -o schnelltest_1925.stl -D 'rad_durchmesser=19.25' passadapter_schnelltest.scad
+openscad -o schnelltest_1925.stl -D 'rad_durchmesser=19.25' -D 'markierungen=2' passadapter_schnelltest.scad
 ```
