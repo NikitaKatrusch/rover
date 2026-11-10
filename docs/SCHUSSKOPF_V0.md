@@ -27,6 +27,16 @@ Für einen bauähnlichen RS-775SM veröffentlicht Lihua bei 12 V zwei deutlich u
 
 Fusion öffnet das Modell als Netz in Millimetern. Aus dem Repository lässt es sich mit `node cad/Schusskopf/generate.js` reproduzieren. Die erzeugte 3MF wurde auf korrekte Einheiten, 15 geschlossene Einzelnetze und ausgewählte Freiräume geprüft. Die Prüfung der Maßketten ist kein Betriebsnachweis.
 
+## Stehender Motorhalter für die Lochplatte
+
+Nikita hat am 10.11.2026 am 775-Gehäuse Ø44,2 mm gemessen und eine offene Führung mit verstellbarem Fuß für die Montageprobe vorgeschlagen. Die gemessenen Abstände von der oberen Motorstirnfläche zur Rollenunterkante liegen ungefähr bei 9,19 und 8,39 mm. Beim größeren Abstand ist die Welle laut Nutzer noch nicht vollständig im Adapter. Der Unterschied von rund 0,8 mm ist daher ein vorläufiger Einbauwert.
+
+Der [Schiebehalter](../cad/Schusskopf/motorhalter_schiebeprobe.scad) hat zwei offene, 45 mm hohe Seitenführungen mit Ø44,9 mm Soll-Innendurchmesser. Der Motor steht am unteren Metallrand auf zwei segmentförmigen Auflagen in 24 mm Höhe über der Lochplatte. Das Zentrum und die Seiten in Zuführrichtung sind für Kabel und Vorsprünge offen. Die Außennut nimmt einen Kabelbinder oder ein Band von bis zu etwa 5 mm Breite für die stromlose Passprobe auf. Ein Anschluss oder Wellenstummel muss frei bleiben, bevor die Auflagefläche belastet wird.
+
+Zwei quer verlaufende Langlöcher von 20 × 4,5 mm liegen 60 mm auseinander und orientieren sich am früher dokumentierten 10-mm-Raster. Auf der vorhandenen Platte eine geeignete Rasterposition mit Unterlegscheiben und Durchgangsschrauben prüfen. Zum Ausrichten zuerst die tatsächlichen Rollen-Ø, Laufflächenhöhen und den kleinsten Spalt direkt messen. Für gleich große Ø72-mm-Rollen entsprechen 137 mm Achsabstand dem 65-mm-Spalt. Die Maße des tatsächlichen Plattenrasters, der Sitz auf dem unteren Metallrand und der Zusammenbau bleiben physisch zu prüfen. Der Halter dient der stromlosen Einbau- und Durchgangsprobe.
+
+Das P1S-Projekt enthält zwei identische, geschlossene Halter. Geprüft wurden Soll-Innendurchmesser, Auflagehöhe, Netzkonnektivität und Slicebarkeit. Mit PLA, 0,4-mm-Düse, 0,28-mm-Schichten und ohne Stützen schätzt der Kommandozeilen-Slicer **45:59 min** und **28,27 g**.
+
 ## Einzug zwischen den Rollen prüfen
 
 In Schussrichtung gesehen bewegen sich die beiden einander zugewandten Rollenflächen beide zum Auslauf. Beim ersten Kontakt drückt die Rolle den Ball entlang der schrägen Verbindungslinie ihrer Mittelpunkte. Diese Kraft hat einen Anteil zurück zum Einlauf. Die Reibung muss diesen Anteil überwinden. Eine seitliche Abweichung führt bei den betrachteten Einstellungen zunächst zum Kontakt mit nur einer Rolle. Eine mittige Führung reduziert dieses Risiko.
