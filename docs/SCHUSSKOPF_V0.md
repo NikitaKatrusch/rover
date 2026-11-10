@@ -37,6 +37,14 @@ Zwei quer verlaufende Langlöcher von 20 × 4,5 mm liegen 60 mm auseinander und 
 
 Das P1S-Projekt enthält zwei identische, geschlossene Halter. Geprüft wurden Soll-Innendurchmesser, Auflagehöhe, Netzkonnektivität und Slicebarkeit. Mit PLA, 0,4-mm-Düse, 0,28-mm-Schichten und ohne Stützen schätzt der Kommandozeilen-Slicer **45:59 min** und **28,27 g**.
 
+### Steckpins für die Schiebehalter
+
+Die [Steckpins mit Keilclips](../cad/Schusskopf/motorhalter_steckpins.scad) sind für die stromlose Probe an 4,5 mm breiten Langlöchern und einer angenommenen Plattendicke von 4 mm vorgesehen. Zusammen mit dem 3,2 mm dicken Halterfuß ergibt sich ein nomineller Klemmstapel von 7,2 mm. Die Platte muss von unten zugänglich sein und Freiraum für die Clips haben.
+
+Je vier Pins stehen mit Sollschaft Ø4,0 mm (eine Kerbe im Kopf) und Ø4,2 mm (zwei Kerben) zur Verfügung. Vier passende Pins von oben durch Halter und Platte führen. Beim Einsetzen mit Ø4,0 mm beginnen. Die sechs Keilclips werden von unten seitlich in die Nut am Pin geschoben, bis der Fuß in der gewünschten Position sitzt. Zum Verstellen die Clips vorher lösen. Die gedruckte Passung und Haltekraft am vorhandenen Aufbau wurden noch nicht geprüft.
+
+Das separate P1S-Projekt enthält die acht Pins und sechs Clips. Die 14 Netze wurden auf geschlossene Kanten und Anzahl geprüft und gemeinsam geslict. Slicerschätzung für PLA, 0,4 mm Düse und 0,2 mm Schichthöhe **21:49 min** und **3,93 g**.
+
 ## Einzug zwischen den Rollen prüfen
 
 In Schussrichtung gesehen bewegen sich die beiden einander zugewandten Rollenflächen beide zum Auslauf. Beim ersten Kontakt drückt die Rolle den Ball entlang der schrägen Verbindungslinie ihrer Mittelpunkte. Diese Kraft hat einen Anteil zurück zum Einlauf. Die Reibung muss diesen Anteil überwinden. Eine seitliche Abweichung führt bei den betrachteten Einstellungen zunächst zum Kontakt mit nur einer Rolle. Eine mittige Führung reduziert dieses Risiko.
