@@ -79,7 +79,9 @@ Nikita bestätigte am 10.11.2026, dass der Ø19,35-mm-Radzapfen von V2 passt und
 
 V4 nutzt für alle drei Prüfkörper den [durchgehenden Ring](passadapter_wellenprobe.scad) mit Radzapfen Ø19,35 mm, 12 mm Einstecktiefe und 15,2 mm Gesamtlänge. Bohrungen im CAD sind Ø5,15 mm (eine Kerbe), Ø5,20 mm (zwei Kerben) und Ø5,25 mm (drei Kerben). Das Teil mit drei Kerben zuerst separat auf der stromlosen Welle prüfen. Nur bei zu viel Spiel eine kleinere Variante versuchen. Die Passung soll von Hand lösbar sein.
 
-Die drei Netze wurden auf Sollmaße, geschlossene Kanten und Konnektivität geprüft und auf einer P1S-Platte geslict. Das Projekt übernimmt die V3-Einstellungen. Der Kommandozeilen-Slicer schätzt **30:42 min** und **14,39 g**. Die tatsächliche Passprobe steht aus.
+Die drei Netze wurden auf Sollmaße, geschlossene Kanten und Konnektivität geprüft und auf einer P1S-Platte geslict. Das Projekt übernimmt die V3-Einstellungen. Der Kommandozeilen-Slicer schätzt **30:42 min** und **14,39 g**.
+
+**Passprobe am 10.11.2026.** Nikita hat je eine Motor-Rad-Kombination mit dem V4-Adapter mit einer Kerbe (Sollbohrung Ø5,15 mm) und mit zwei Kerben (Sollbohrung Ø5,20 mm) zusammengesteckt. Beide Radzapfen haben nominal Ø19,35 mm. Die Paarungen für die weitere stromlose Montageprobe beibehalten. Unterschiede an den beiden Wellen oder Radkernen werden vermutet. Ist-Durchmesser, Einstecktiefe und Rundlauf der montierten Paarungen wurden noch nicht gemessen.
 
 ```sh
 openscad -o passadapter_v4_525.stl -D 'wellenbohrung=5.25' -D 'markierungen=3' passadapter_wellenprobe.scad
