@@ -57,3 +57,18 @@ Bambu Studio 2.6.0.51 hat alle drei Varianten gemeinsam geslict. Die geschlossen
 ```sh
 openscad -o wellenprobe_565.stl -D 'wellenbohrung=5.65' -D 'markierungen=2' passadapter_wellenprobe.scad
 ```
+
+## Wellenlehre und Passadapter V3
+
+Nikita meldete am 10.11.2026, dass die V2-Teile alle zu groß seien. Für diese Iteration wurde daraus geschlossen, dass die Wellenbohrungen zu viel Spiel haben. Die Zuordnung zum Wellensitz, die Ist-Durchmesser und die Radpassung sind noch zu bestätigen.
+
+Die [Wellenlehre](passadapter_wellenlehre.scad) fasst fünf beschriftete CAD-Bohrungen in einem 5,2 mm dicken Streifen zusammen. Von klein nach groß sind das Ø5,25, Ø5,30, Ø5,35, Ø5,40 und Ø5,45 mm. Beginne an der stromlosen Welle bei Ø5,45 mm und geh schrittweise kleiner, bis die Lehre möglichst spielfrei und von Hand leicht abziehbar sitzt.
+
+Daneben liegt ein [vollständiger Passadapter](passadapter_wellenprobe.scad) mit Ø5,35 mm Bohrung, Ø19,35 mm Radzapfen und vier Kerben. Prüfe den Adapter separat auf der Welle und im Rad. Das Lehrenergebnis ist wegen der kürzeren Bohrung ein Anhaltspunkt für den Adapter. Der physische V3-Test steht aus.
+
+Bambu Studio 2.6.0.51 hat beide geschlossenen, zusammenhängenden Netze auf einer Platte geslict. P1S, PLA, 0,4-mm-Düse, 0,20-mm-Schichten, vier Wandlinien und 40 % Füllung wie bei V2. Slicerschätzung **25:56 min** und **9,44 g**.
+
+```sh
+openscad -o wellenlehre.stl passadapter_wellenlehre.scad
+openscad -o passadapter_v3_535.stl -D 'wellenbohrung=5.35' -D 'markierungen=4' passadapter_wellenprobe.scad
+```
