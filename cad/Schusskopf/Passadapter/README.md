@@ -72,3 +72,15 @@ Bambu Studio 2.6.0.51 hat beide geschlossenen, zusammenhängenden Netze auf eine
 openscad -o wellenlehre.stl passadapter_wellenlehre.scad
 openscad -o passadapter_v3_535.stl -D 'wellenbohrung=5.35' -D 'markierungen=4' passadapter_wellenprobe.scad
 ```
+
+## Vollständige Passadapter V4
+
+Nikita bestätigte am 10.11.2026, dass der Ø19,35-mm-Radzapfen von V2 passt und dass Ø5,25 mm in der kurzen V3-Lehre bisher am besten sitzt, aber noch Spiel hat. Damit ist die frühere Rückmeldung zu V2 der Wellenseite zuzuordnen. Das Sollmaß Ø5,25 mm war auch in allen drei hohlen V1-Adaptern enthalten. Bei V3 läuft dieselbe Nennbohrung durch eine nur 5,2 mm dicke Lehre. Ein vollständiger Prüfkörper kann sich durch die längere Führung und die gedruckte Innenkontur anders anfühlen. Der Ist-Durchmesser der Bohrungen steht aus.
+
+V4 nutzt für alle drei Prüfkörper den [durchgehenden Ring](passadapter_wellenprobe.scad) mit Radzapfen Ø19,35 mm, 12 mm Einstecktiefe und 15,2 mm Gesamtlänge. Bohrungen im CAD sind Ø5,15 mm (eine Kerbe), Ø5,20 mm (zwei Kerben) und Ø5,25 mm (drei Kerben). Das Teil mit drei Kerben zuerst separat auf der stromlosen Welle prüfen. Nur bei zu viel Spiel eine kleinere Variante versuchen. Die Passung soll von Hand lösbar sein.
+
+Die drei Netze wurden auf Sollmaße, geschlossene Kanten und Konnektivität geprüft und auf einer P1S-Platte geslict. Das Projekt übernimmt die V3-Einstellungen. Der Kommandozeilen-Slicer schätzt **30:42 min** und **14,39 g**. Die tatsächliche Passprobe steht aus.
+
+```sh
+openscad -o passadapter_v4_525.stl -D 'wellenbohrung=5.25' -D 'markierungen=3' passadapter_wellenprobe.scad
+```
