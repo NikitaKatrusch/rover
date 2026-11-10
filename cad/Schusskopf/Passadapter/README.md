@@ -37,3 +37,23 @@ Alle drei Varianten drucken gemeinsam, damit der Drucker nur einmal die Startseq
 ```sh
 openscad -o schnelltest_1925.stl -D 'rad_durchmesser=19.25' -D 'markierungen=2' passadapter_schnelltest.scad
 ```
+
+## Wellenpassprobe V2
+
+Am 10.11.2026 meldete Nikita nach dem Druck, dass alle drei hohlen V1-Varianten ins Rad gingen. Die Ø5,25-mm-Sollbohrung saß sehr stramm auf der Welle. Beim Einschieben der Welle in die bereits im Rad sitzenden Prüfteile riss die Innenhülse bei allen dreien aus. Bei einem Teil trennte sich zusätzlich der Anschlag. Das Nutzerfoto zeigt die getrennten Teile. Das radseitige Spiel sowie der Ist-Ø der gedruckten Bohrung wurden noch nicht gemessen.
+
+Die [Wellenpassprobe V2](passadapter_wellenprobe.scad) verwendet für alle drei Varianten den größten bereits einsetzbaren Radzapfen von Ø19,35 mm und 12 mm Einstecktiefe. Der Körper ist in CAD als durchgehender Ring ausgeführt, der Anschlag ist 3,2 mm dick und beide Wellenöffnungen haben eine 0,8-mm-Einführfase. Die drei Kerbenzahlen stehen in V2 für die Wellenbohrungen.
+
+| Kerben am Anschlag | Wellenbohrung im CAD |
+|---:|---:|
+| 1 | Ø5,50 mm |
+| 2 | Ø5,65 mm |
+| 3 | Ø5,80 mm |
+
+Zuerst am vom Netzteil getrennten Motor mit der größten Bohrung beginnen. Der Prüfkörper soll sich separat von Hand aufschieben und wieder abziehen lassen. Kleinere Varianten nur prüfen, wenn die größere deutliches Spiel hat. Anschließend die Radpassung und den Sitz des Anschlags prüfen. Erst bei leicht lösbaren Einzelpassungen beides zusammenstecken. Die Teile sind für die stromlose Passprobe vorgesehen.
+
+Bambu Studio 2.6.0.51 hat alle drei Varianten gemeinsam geslict. Die geschlossenen Netze wurden auf Konnektivität und Sollmaße geprüft. P1S, PLA, 0,4-mm-Düse, 0,20-mm-Schichten, vier Wandlinien und 40 % Füllung. Slicerschätzung **29:53 min** und **14,27 g** für alle drei. Die physische V2-Passprobe steht aus.
+
+```sh
+openscad -o wellenprobe_565.stl -D 'wellenbohrung=5.65' -D 'markierungen=2' passadapter_wellenprobe.scad
+```
